@@ -1,0 +1,5666 @@
+﻿    
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkNoYXRzQXBwIEljb24iPg0KICA8ZGVmcz4NCiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+DQogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjFmOGVlIi8+DQogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNGYyZGYiLz4NCiAgICA8L2xpbmVhckdyYWRpZW50Pg0KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYnViYmxlIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+DQogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNGVjYjU2Ii8+DQogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZGFkNGIiLz4NCiAgICA8L2xpbmVhckdyYWRpZW50Pg0KICA8L2RlZnM+DQoNCiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTYiIGZpbGw9InVybCgjYmcpIi8+DQoNCiAgPHBhdGggZD0iTTEyNyAxNDdjLTQ5IDAtODkgMzQtODkgNzggMCAyOSAxNyA1NCA0MyA2OGwtMTAgNDNjLTIgOCA2IDE0IDEzIDEwbDQ1LTI2YzYgMSAxMyAyIDIwIDJoMTA1YzQ5IDAgODktMzQgODktNzhzLTQwLTc3LTg5LTc3SDEyN3oiDQogICAgICAgIGZpbGw9IiNmZmZmZmYiDQogICAgICAgIHN0cm9rZT0idXJsKCNidWJibGUpIg0KICAgICAgICBzdHJva2Utd2lkdGg9IjE2Ig0KICAgICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQoNCiAgPGNpcmNsZSBjeD0iMTY1IiBjeT0iMjQ0IiByPSIxNyIgZmlsbD0idXJsKCNidWJibGUpIi8+DQogIDxjaXJjbGUgY3g9IjIyNiIgY3k9IjI0NCIgcj0iMTciIGZpbGw9InVybCgjYnViYmxlKSIvPg0KDQogIDxwYXRoIGQ9Ik0yNjAgMTQ5aDEwMmM2MiAwIDExMiA0MyAxMTIgOTYgMCAzMy0yMCA2Mi01MCA3OWwxMiA1MWMyIDktNyAxNi0xNSAxMWwtNTItMjljLTIgMC00IDAtNyAwSDI2MGMtNjIgMC0xMTItNDMtMTEyLTk2czUwLTExMiAxMTItMTEyeiINCiAgICAgICAgZmlsbD0idXJsKCNidWJibGUpIi8+DQoNCiAgPGNpcmNsZSBjeD0iMzMyIiBjeT0iMjQ2IiByPSIxNyIgZmlsbD0iI2ZmZmZmZiIvPg0KICA8Y2lyY2xlIGN4PSIzOTMiIGN5PSIyNDYiIHI9IjE3IiBmaWxsPSIjZmZmZmZmIi8+DQo8L3N2Zz4NCg==" />
+  <link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkNoYXRzQXBwIEljb24iPg0KICA8ZGVmcz4NCiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+DQogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjFmOGVlIi8+DQogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNGYyZGYiLz4NCiAgICA8L2xpbmVhckdyYWRpZW50Pg0KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYnViYmxlIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+DQogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNGVjYjU2Ii8+DQogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZGFkNGIiLz4NCiAgICA8L2xpbmVhckdyYWRpZW50Pg0KICA8L2RlZnM+DQoNCiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTYiIGZpbGw9InVybCgjYmcpIi8+DQoNCiAgPHBhdGggZD0iTTEyNyAxNDdjLTQ5IDAtODkgMzQtODkgNzggMCAyOSAxNyA1NCA0MyA2OGwtMTAgNDNjLTIgOCA2IDE0IDEzIDEwbDQ1LTI2YzYgMSAxMyAyIDIwIDJoMTA1YzQ5IDAgODktMzQgODktNzhzLTQwLTc3LTg5LTc3SDEyN3oiDQogICAgICAgIGZpbGw9IiNmZmZmZmYiDQogICAgICAgIHN0cm9rZT0idXJsKCNidWJibGUpIg0KICAgICAgICBzdHJva2Utd2lkdGg9IjE2Ig0KICAgICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQoNCiAgPGNpcmNsZSBjeD0iMTY1IiBjeT0iMjQ0IiByPSIxNyIgZmlsbD0idXJsKCNidWJibGUpIi8+DQogIDxjaXJjbGUgY3g9IjIyNiIgY3k9IjI0NCIgcj0iMTciIGZpbGw9InVybCgjYnViYmxlKSIvPg0KDQogIDxwYXRoIGQ9Ik0yNjAgMTQ5aDEwMmM2MiAwIDExMiA0MyAxMTIgOTYgMCAzMy0yMCA2Mi01MCA3OWwxMiA1MWMyIDktNyAxNi0xNSAxMWwtNTItMjljLTIgMC00IDAtNyAwSDI2MGMtNjIgMC0xMTItNDMtMTEyLTk2czUwLTExMiAxMTItMTEyeiINCiAgICAgICAgZmlsbD0idXJsKCNidWJibGUpIi8+DQoNCiAgPGNpcmNsZSBjeD0iMzMyIiBjeT0iMjQ2IiByPSIxNyIgZmlsbD0iI2ZmZmZmZiIvPg0KICA8Y2lyY2xlIGN4PSIzOTMiIGN5PSIyNDYiIHI9IjE3IiBmaWxsPSIjZmZmZmZmIi8+DQo8L3N2Zz4NCg==" />
+  <title>ChatsApp</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Noto+Sans+SC:wght@400;500;700&display=swap");
+
+    :root {
+      --bg: #edf2ea;
+      --bg-2: #f8fbf6;
+      --panel: rgba(255, 255, 255, 0.92);
+      --panel-strong: #ffffff;
+      --border: rgba(15, 23, 42, 0.08);
+      --text: #18212f;
+      --muted: #6b7280;
+      --primary: #22c55e;
+      --primary-2: #16a34a;
+      --danger: #ef4444;
+      --ok: #16a34a;
+      --shadow: 0 18px 45px rgba(41, 72, 52, 0.08);
+      --page-gutter: clamp(4px, 1.6vw, 22px);
+      --surface-pad: clamp(8px, 1.3vw, 16px);
+      --stack-gap: clamp(10px, 1.4vw, 16px);
+      --app-frame-height: calc(100dvh - (var(--page-gutter) * 2) - env(safe-area-inset-top, 0px) - env(safe-area-inset-bottom, 0px));
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    html, body {
+      height: 100%;
+      overscroll-behavior: none;
+      overflow: hidden;
+    }
+
+    body {
+      font-family: "Outfit", "Noto Sans SC", sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top left, rgba(34, 197, 94, 0.16), transparent 28%),
+        linear-gradient(180deg, #f7fbf7 0%, #edf2ea 100%);
+      min-height: 100vh;
+      min-height: 100dvh;
+      padding-top: calc(var(--page-gutter) + env(safe-area-inset-top, 0px));
+      padding-right: calc(var(--page-gutter) + env(safe-area-inset-right, 0px));
+      padding-bottom: calc(var(--page-gutter) + env(safe-area-inset-bottom, 0px));
+      padding-left: calc(var(--page-gutter) + env(safe-area-inset-left, 0px));
+      animation: appFadeIn 0.5s ease;
+    }
+
+    .app {
+      width: 100%;
+      margin: 0;
+      height: var(--app-frame-height);
+      max-height: var(--app-frame-height);
+      min-height: var(--app-frame-height);
+      display: grid;
+      grid-template-rows: auto 1fr;
+      gap: var(--stack-gap);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .header-right {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .brand-mark {
+      width: 44px;
+      height: 44px;
+      border-radius: 16px;
+      border: 1px solid rgba(29, 173, 75, 0.22);
+      background: #f6fbf4 url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiByb2xlPSJpbWciIGFyaWEtbGFiZWw9IkNoYXRzQXBwIEljb24iPg0KICA8ZGVmcz4NCiAgICA8bGluZWFyR3JhZGllbnQgaWQ9ImJnIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+DQogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjZjFmOGVlIi8+DQogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNlNGYyZGYiLz4NCiAgICA8L2xpbmVhckdyYWRpZW50Pg0KICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYnViYmxlIiB4MT0iMCIgeTE9IjAiIHgyPSIxIiB5Mj0iMSI+DQogICAgICA8c3RvcCBvZmZzZXQ9IjAlIiBzdG9wLWNvbG9yPSIjNGVjYjU2Ii8+DQogICAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMxZGFkNGIiLz4NCiAgICA8L2xpbmVhckdyYWRpZW50Pg0KICA8L2RlZnM+DQoNCiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjUxMiIgaGVpZ2h0PSI1MTIiIHJ4PSIxMTYiIGZpbGw9InVybCgjYmcpIi8+DQoNCiAgPHBhdGggZD0iTTEyNyAxNDdjLTQ5IDAtODkgMzQtODkgNzggMCAyOSAxNyA1NCA0MyA2OGwtMTAgNDNjLTIgOCA2IDE0IDEzIDEwbDQ1LTI2YzYgMSAxMyAyIDIwIDJoMTA1YzQ5IDAgODktMzQgODktNzhzLTQwLTc3LTg5LTc3SDEyN3oiDQogICAgICAgIGZpbGw9IiNmZmZmZmYiDQogICAgICAgIHN0cm9rZT0idXJsKCNidWJibGUpIg0KICAgICAgICBzdHJva2Utd2lkdGg9IjE2Ig0KICAgICAgICBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+DQoNCiAgPGNpcmNsZSBjeD0iMTY1IiBjeT0iMjQ0IiByPSIxNyIgZmlsbD0idXJsKCNidWJibGUpIi8+DQogIDxjaXJjbGUgY3g9IjIyNiIgY3k9IjI0NCIgcj0iMTciIGZpbGw9InVybCgjYnViYmxlKSIvPg0KDQogIDxwYXRoIGQ9Ik0yNjAgMTQ5aDEwMmM2MiAwIDExMiA0MyAxMTIgOTYgMCAzMy0yMCA2Mi01MCA3OWwxMiA1MWMyIDktNyAxNi0xNSAxMWwtNTItMjljLTIgMC00IDAtNyAwSDI2MGMtNjIgMC0xMTItNDMtMTEyLTk2czUwLTExMiAxMTItMTEyeiINCiAgICAgICAgZmlsbD0idXJsKCNidWJibGUpIi8+DQoNCiAgPGNpcmNsZSBjeD0iMzMyIiBjeT0iMjQ2IiByPSIxNyIgZmlsbD0iI2ZmZmZmZiIvPg0KICA8Y2lyY2xlIGN4PSIzOTMiIGN5PSIyNDYiIHI9IjE3IiBmaWxsPSIjZmZmZmZmIi8+DQo8L3N2Zz4NCg==") center / 82% no-repeat;
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), 0 10px 25px rgba(34, 197, 94, 0.18);
+    }
+
+    .title { font-size: 28px; font-weight: 800; letter-spacing: -0.02em; }
+    .muted { color: var(--muted); font-size: 13px; }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+      animation: cardRiseIn 0.45s ease both;
+    }
+
+    .hidden { display: none !important; }
+
+    .auth-wrap {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: var(--surface-pad);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .auth-shell {
+      width: min(100%, clamp(300px, 42vw, 520px));
+    }
+
+    .auth-main {
+      padding: clamp(16px, 3vw, 32px);
+      border-radius: 22px;
+      border: 1px solid rgba(15, 23, 42, 0.06);
+      background: rgba(255,255,255,0.9);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .auth-progress {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      background: linear-gradient(90deg, var(--primary), var(--primary-2));
+      border-radius: 0 3px 3px 0;
+      transition: width 0.3s ease;
+      opacity: 0;
+      pointer-events: none;
+    }
+
+    .auth-progress.running {
+      opacity: 1;
+      animation: authProgressPulse 1.4s ease-in-out infinite;
+    }
+
+    @keyframes authProgressPulse {
+      0%   { width: 0%; }
+      40%  { width: 72%; }
+      70%  { width: 88%; }
+      100% { width: 88%; }
+    }
+
+    .auth-progress.done {
+      opacity: 1;
+      width: 100% !important;
+      animation: none;
+      transition: width 0.15s ease, opacity 0.3s ease 0.2s;
+    }
+
+    .auth-brand {
+      display: grid;
+      justify-items: center;
+      gap: 10px;
+      margin-bottom: 18px;
+      text-align: center;
+    }
+
+    .auth-brand .brand-mark {
+      width: 56px;
+      height: 56px;
+      border-radius: 20px;
+    }
+
+    .auth-title {
+      font-size: 24px;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+    }
+
+    .auth-subtitle {
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .tabs {
+      display: flex;
+      gap: 0;
+      margin-bottom: 24px;
+      border-bottom: 2px solid rgba(15, 23, 42, 0.08);
+    }
+
+    .tab {
+      flex: 1;
+      border: 0;
+      border-bottom: 2.5px solid transparent;
+      margin-bottom: -2px;
+      border-radius: 0;
+      padding: 11px 8px;
+      background: transparent;
+      color: #9ca3af;
+      cursor: pointer;
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.01em;
+      transition: color 0.18s ease, border-color 0.18s ease;
+    }
+
+    .tab:hover {
+      color: #374151;
+      transform: none;
+    }
+
+    .tab:active {
+      transform: none;
+    }
+
+    .tab.active {
+      color: var(--primary-2);
+      border-bottom-color: var(--primary-2);
+      background: transparent;
+      box-shadow: none;
+    }
+
+    form.grid { display: grid; gap: 12px; }
+    .grid-2 { display: grid; grid-template-columns: 1fr; gap: 12px; }
+
+    input, button, textarea {
+      width: 100%;
+      border-radius: 14px;
+      border: 1px solid #d7dfe4;
+      background: #ffffff;
+      color: #111827;
+      padding: 12px 14px;
+      font: inherit;
+      outline: none;
+      transition: box-shadow 0.2s ease, border-color 0.2s ease, transform 0.15s ease, background-color 0.2s ease;
+    }
+
+    textarea { min-height: 84px; resize: none; }
+
+    input:focus, textarea:focus {
+      border-color: rgba(34,197,94,0.8);
+      box-shadow: 0 0 0 3px rgba(34,197,94,0.16);
+    }
+
+    button {
+      cursor: pointer;
+      font-weight: 700;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    button:hover {
+      transform: translateY(-1px);
+    }
+
+    button:active {
+      transform: translateY(0);
+    }
+
+    .btn-primary {
+      background: linear-gradient(90deg, var(--primary), var(--primary-2));
+      border: 0;
+      color: white;
+      box-shadow: 0 10px 18px rgba(34, 197, 94, 0.22);
+    }
+
+    .btn-secondary { background: #eff4ef; border: 1px solid rgba(15,23,42,0.08); color: #1f2937; }
+    .btn-danger { background: var(--danger); border: 0; }
+
+    .lang-switch {
+      display: inline-flex;
+      gap: 4px;
+      padding: 4px;
+      border-radius: 14px;
+      border: 1px solid rgba(15,23,42,0.08);
+      background: rgba(255,255,255,0.72);
+    }
+
+    .lang-btn {
+      width: auto;
+      min-width: 48px;
+      padding: 8px 12px;
+      border: 0;
+      border-radius: 10px;
+      background: transparent;
+      color: #4b5563;
+      font-weight: 700;
+    }
+
+    .lang-btn.active {
+      background: #ffffff;
+      color: #111827;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    }
+
+    .msg {
+      min-height: 18px;
+      font-size: 13px;
+      color: #fca5a5;
+    }
+
+    .main {
+      min-height: 0;
+      height: 100%;
+      display: grid;
+      overflow: hidden;
+    }
+
+    .main > * {
+      min-height: 0;
+    }
+
+    .sidebar {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      padding: var(--surface-pad);
+      display: grid;
+      grid-template-rows: auto auto;
+      gap: var(--stack-gap);
+      min-height: 0;
+      height: auto;
+    }
+
+    .sidebar-top {
+      display: grid;
+      gap: 12px;
+    }
+
+    .sidebar-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-title {
+      font-size: 18px;
+      font-weight: 700;
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+    }
+
+    .mini-btn {
+      width: auto;
+      padding: 10px 14px;
+      border-radius: 12px;
+      font-weight: 600;
+    }
+
+    #refreshBtn {
+      min-width: 96px;
+    }
+
+    #refreshBtn.loading {
+      opacity: 0.9;
+      pointer-events: none;
+    }
+
+    .refresh-btn-content {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      line-height: 1;
+    }
+
+    .refresh-icon {
+      display: inline-block;
+      font-size: 14px;
+      transform-origin: 50% 50%;
+    }
+
+    #refreshBtn.loading .refresh-icon {
+      animation: refreshSpin 0.8s linear infinite;
+    }
+
+    @keyframes refreshSpin {
+      from { transform: rotate(0deg); }
+      to { transform: rotate(360deg); }
+    }
+
+    .utility-actions {
+      display: flex;
+      gap: 8px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    .action-chip {
+      width: auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 10px 14px;
+      border-radius: 14px;
+      border: 1px solid rgba(15,23,42,0.08);
+      background: #f4f7f4;
+      color: #1f2937;
+      font-weight: 700;
+    }
+
+    .action-chip.active {
+      background: rgba(34,197,94,0.12);
+      border-color: rgba(34,197,94,0.28);
+      color: #15803d;
+    }
+
+    .utility-stack {
+      display: grid;
+      gap: 10px;
+    }
+
+    .utility-panel {
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 14px;
+      background: linear-gradient(180deg, #ffffff 0%, #f7faf7 100%);
+      animation: panelDropIn 0.3s ease both;
+    }
+
+    .account-avatar-row {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 12px;
+      align-items: center;
+      margin-bottom: 12px;
+      padding: 10px;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      border-radius: 14px;
+      background: #f8fbf8;
+    }
+
+    .account-avatar-preview {
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      border: 1px solid rgba(15, 23, 42, 0.12);
+      object-fit: cover;
+      background: #ffffff;
+      cursor: zoom-in;
+    }
+
+    .account-avatar-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .account-avatar-actions .mini-btn {
+      padding: 8px 10px;
+      min-height: 36px;
+      border-radius: 10px;
+    }
+
+    .panel-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+
+    .panel-title {
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .request-tabs {
+      display: inline-flex;
+      gap: 6px;
+      padding: 4px;
+      border-radius: 14px;
+      background: #eef2ef;
+      margin-bottom: 12px;
+    }
+
+    .request-tab {
+      width: auto;
+      padding: 8px 12px;
+      border-radius: 10px;
+      border: 0;
+      background: transparent;
+      font-weight: 600;
+      color: #4b5563;
+    }
+
+    .request-tab.active {
+      background: #ffffff;
+      color: #111827;
+      box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+    }
+
+    .block {
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 12px;
+      background: rgba(255,255,255,0.86);
+    }
+
+    .block h3 {
+      font-size: 15px;
+      margin-bottom: 10px;
+      color: #1f2937;
+    }
+
+    .list { display: grid; gap: 8px; max-height: 280px; overflow: auto; }
+
+    .friends-wrap {
+      min-height: 0;
+      display: grid;
+      grid-template-rows: auto auto auto;
+    }
+
+    .friends-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 12px;
+    }
+
+    .friends-search {
+      width: 100%;
+      margin-bottom: 10px;
+      border-radius: 12px;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      background: #ffffff;
+      padding: 9px 11px;
+      font-size: 13px;
+      height: 40px;
+      min-height: unset;
+    }
+
+    .friends-list {
+      display: grid;
+      gap: 8px;
+      overflow-y: auto;
+      max-height: clamp(240px, 48vh, 520px);
+      padding-right: 4px;
+      contain: content;
+      will-change: scroll-position;
+      scroll-behavior: smooth;
+    }
+
+    .item {
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 12px;
+      background: #f9fbf8;
+      transform: translateZ(0);
+    }
+
+    .item-top {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      align-items: center;
+      margin-bottom: 6px;
+    }
+
+    .friend-main {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+    }
+
+    .friend-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 11px;
+      border: 1px solid rgba(15, 23, 42, 0.1);
+      object-fit: cover;
+      flex-shrink: 0;
+      background: #ffffff;
+      cursor: zoom-in;
+    }
+
+    .friend-info {
+      min-width: 0;
+    }
+
+    .friend-name-line {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .friend-meta {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .friend-preview {
+      font-size: 12px;
+      color: #667085;
+      margin-top: 4px;
+      max-width: 220px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .friend-time {
+      font-size: 11px;
+      color: #8b95a1;
+      margin-left: 8px;
+      white-space: nowrap;
+    }
+
+    .bubble-actions {
+      margin-top: 6px;
+      display: flex;
+      justify-content: flex-end;
+      gap: 6px;
+    }
+
+    .bubble-action-btn {
+      width: auto;
+      min-width: 44px;
+      height: 22px;
+      padding: 0 8px;
+      border-radius: 999px;
+      border: 1px solid rgba(15, 23, 42, 0.1);
+      background: rgba(255, 255, 255, 0.66);
+      color: #334155;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 20px;
+    }
+
+    .status-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      display: inline-block;
+      flex-shrink: 0;
+    }
+
+    .status-online { background: #22c55e; }
+    .status-offline { background: #9ca3af; }
+
+    .item button { width: auto; padding: 8px 12px; font-size: 12px; }
+
+    .friends .item {
+      cursor: pointer;
+      transition: border-color 0.2s ease, background-color 0.2s ease, transform 0.2s ease;
+    }
+
+    .friends .item.active {
+      border-color: rgba(34,197,94,0.28);
+      background: rgba(34,197,94,0.12);
+      transform: translateY(-1px);
+    }
+
+    .badge-dot {
+      min-width: 18px;
+      height: 18px;
+      border-radius: 999px;
+      background: #ef4444;
+      color: #fff;
+      font-size: 11px;
+      line-height: 18px;
+      text-align: center;
+      padding: 0 5px;
+      font-weight: 700;
+    }
+
+    .typing-text {
+      color: #16a34a;
+      font-size: 12px;
+      margin-top: 4px;
+    }
+
+    .chat {
+      width: 100%;
+      max-width: none;
+      margin: 0;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: var(--stack-gap);
+      padding: var(--surface-pad);
+      min-height: 0;
+      height: 100%;
+    }
+
+    #friendsPane:not(.hidden),
+    #chatPane:not(.hidden) {
+      animation: paneSwitchIn 0.28s ease;
+    }
+
+    .chat-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: 1px solid var(--border);
+      border-radius: 20px;
+      padding: 16px 18px;
+      background: rgba(255,255,255,0.86);
+    }
+
+    .chat-list {
+      border: 1px solid var(--border);
+      border-radius: 22px;
+      padding: 16px;
+      background:
+        radial-gradient(circle at top right, rgba(34,197,94,0.08), transparent 26%),
+        #f4f7f4;
+      overflow: auto;
+      min-height: 0;
+      max-height: none;
+      display: grid;
+      align-content: start;
+      gap: 10px;
+      contain: content;
+      will-change: scroll-position;
+      scroll-behavior: smooth;
+    }
+
+    .bubble {
+      max-width: 76%;
+      border-radius: 18px;
+      padding: 10px 12px;
+      border: 1px solid transparent;
+      font-size: 14px;
+      line-height: 1.45;
+      word-break: break-word;
+      box-shadow: 0 8px 18px rgba(15, 23, 42, 0.05);
+      transform: translateZ(0);
+    }
+
+    .mine {
+      justify-self: end;
+      background: linear-gradient(180deg, #a7f07c 0%, #95ec69 100%);
+      color: #111827;
+      border-color: #84d95e;
+    }
+
+    .other {
+      justify-self: start;
+      background: #ffffff;
+      color: #111827;
+      border-color: #e5e7eb;
+    }
+
+    .time {
+      margin-top: 4px;
+      font-size: 11px;
+      color: #6b7280;
+    }
+
+    .read-receipt {
+      margin-top: 4px;
+      font-size: 11px;
+      color: #16a34a;
+      font-weight: 600;
+      text-align: right;
+    }
+
+    .bubble-file {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 4px;
+      max-width: min(240px, 62vw);
+    }
+
+    .file-icon {
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+
+    .file-link {
+      color: inherit;
+      font-size: 13px;
+      word-break: break-all;
+      text-decoration: underline;
+      text-underline-offset: 3px;
+      opacity: 0.9;
+    }
+
+    .bubble-image {
+      max-width: min(260px, 62vw);
+      max-height: 300px;
+      border-radius: 12px;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      display: block;
+      object-fit: cover;
+      margin-top: 4px;
+      cursor: zoom-in;
+    }
+
+    .image-viewer {
+      position: fixed;
+      inset: 0;
+      z-index: 12000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      background: rgba(2, 6, 23, 0.88);
+      padding: 18px;
+    }
+
+    .image-viewer.show {
+      display: flex;
+    }
+
+    .image-viewer img {
+      max-width: min(96vw, 1200px);
+      max-height: 90vh;
+      border-radius: 12px;
+      box-shadow: 0 22px 46px rgba(0, 0, 0, 0.35);
+      object-fit: contain;
+      background: rgba(255, 255, 255, 0.04);
+    }
+
+    .image-viewer-close {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      width: 40px;
+      height: 40px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.3);
+      background: rgba(15, 23, 42, 0.55);
+      color: #fff;
+      font-size: 22px;
+      line-height: 1;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transform: none !important;
+    }
+
+    .camera-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 12500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(2, 6, 23, 0.92);
+      padding: 14px;
+    }
+
+    .camera-card {
+      width: min(96vw, 480px);
+      border-radius: 18px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      background: rgba(15, 23, 42, 0.85);
+      box-shadow: 0 18px 40px rgba(2, 6, 23, 0.45);
+      padding: 12px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .camera-toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .camera-title {
+      color: #e5e7eb;
+      font-size: 14px;
+      font-weight: 700;
+      flex: 1;
+      text-align: center;
+    }
+
+    .camera-flip-btn {
+      width: 38px;
+      height: 38px;
+      min-width: 38px;
+      border-radius: 999px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      background: rgba(255, 255, 255, 0.1);
+      color: #e5e7eb;
+      font-size: 18px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+      transition: background 0.15s ease, transform 0.2s ease;
+    }
+
+    .camera-flip-btn:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+
+    .camera-flip-btn:active {
+      transform: rotate(180deg);
+    }
+
+    .camera-flip-btn:disabled {
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    .camera-preview {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      border-radius: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      background: #020617;
+      object-fit: cover;
+    }
+
+    .camera-actions {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 8px;
+    }
+
+    .camera-actions button {
+      border-radius: 12px;
+      min-height: 42px;
+    }
+
+    .location-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      margin-top: 4px;
+      color: #166534;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .location-link:hover {
+      text-decoration: underline;
+    }
+
+    .notify-toast {
+      position: fixed;
+      right: 16px;
+      top: 18px;
+      z-index: 9999;
+      min-width: 240px;
+      max-width: min(360px, calc(100vw - 32px));
+      border-radius: 14px;
+      border: 1px solid rgba(34, 197, 94, 0.28);
+      background: rgba(255, 255, 255, 0.97);
+      box-shadow: 0 18px 30px rgba(15, 23, 42, 0.16);
+      padding: 10px 12px;
+      transform: translateY(-12px);
+      opacity: 0;
+      pointer-events: none;
+      transition: transform 0.2s ease, opacity 0.2s ease;
+    }
+
+    .notify-toast.show {
+      transform: translateY(0);
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .notify-toast-title {
+      font-size: 12px;
+      color: #16a34a;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .notify-toast-body {
+      font-size: 13px;
+      color: #1f2937;
+      word-break: break-word;
+    }
+
+    .composer {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 10px;
+      align-items: end;
+      padding-bottom: env(safe-area-inset-bottom, 0px);
+    }
+
+    .composer-box {
+      position: relative;
+      min-width: 0;
+    }
+
+    .composer-actions {
+      display: inline-flex;
+      gap: 6px;
+      align-items: center;
+    }
+
+    .composer-actions .mini-btn {
+      width: auto;
+      min-width: 44px;
+      height: 48px;
+      padding: 0 12px;
+      border-radius: 12px;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      background: #eef3ef;
+      color: #1f2937;
+      font-weight: 700;
+    }
+
+    .emoji-picker {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: calc(100% + 10px);
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      border-radius: 18px;
+      background: rgba(255, 255, 255, 0.96);
+      box-shadow: 0 18px 40px rgba(15, 23, 42, 0.16);
+      padding: 12px;
+      backdrop-filter: blur(10px);
+      animation: panelDropIn 0.24s ease both;
+    }
+
+    .emoji-picker.hidden {
+      display: none !important;
+    }
+
+    .emoji-picker-title {
+      font-size: 12px;
+      font-weight: 700;
+      color: #4b5563;
+      margin-bottom: 10px;
+    }
+
+    .emoji-grid {
+      display: grid;
+      grid-template-columns: repeat(8, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .emoji-btn {
+      min-width: 0;
+      height: 40px;
+      padding: 0;
+      border-radius: 12px;
+      border: 1px solid rgba(15, 23, 42, 0.08);
+      background: #f5f8f5;
+      font-size: 20px;
+      line-height: 1;
+      box-shadow: none;
+    }
+
+    .emoji-btn:hover {
+      background: rgba(34, 197, 94, 0.12);
+      border-color: rgba(34, 197, 94, 0.22);
+    }
+
+    #emojiToggleBtn.active {
+      background: rgba(34, 197, 94, 0.12);
+      border-color: rgba(34, 197, 94, 0.28);
+      color: #15803d;
+    }
+
+    .voice-record-btn.active {
+      background: linear-gradient(90deg, #ef4444, #f97316);
+      border-color: rgba(239, 68, 68, 0.28);
+      color: #ffffff;
+    }
+
+    .voice-record-btn.ready {
+      background: linear-gradient(90deg, #8b5cf6, #a78bfa);
+      border-color: rgba(139, 92, 246, 0.28);
+      color: #ffffff;
+    }
+
+    .bubble-audio {
+      width: min(240px, 62vw);
+      max-width: 100%;
+      display: block;
+      margin-top: 4px;
+    }
+
+    .audio-caption {
+      margin-top: 6px;
+    }
+
+    #sendBtn { width: 108px; height: 48px; }
+
+    .empty-state {
+      display: grid;
+      place-items: center;
+      min-height: 100%;
+      color: #7c8795;
+      text-align: center;
+      padding: 32px 12px;
+      font-size: 14px;
+      animation: itemSlideIn 0.2s ease;
+    }
+
+    @keyframes appFadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes cardRiseIn {
+      from { opacity: 0; transform: translateY(8px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes paneSwitchIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes panelDropIn {
+      from { opacity: 0; transform: translateY(-4px) scale(0.99); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    @keyframes itemSlideIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes bubbleIn {
+      from { opacity: 0; transform: translateY(8px) scale(0.98); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+
+    @media (max-width: 960px) {
+      .utility-actions { flex-wrap: wrap; }
+      .chat-list { max-height: none; }
+      .header { align-items: flex-start; }
+      .title { font-size: 24px; }
+      .composer { grid-template-columns: 1fr; }
+      .composer-actions { width: 100%; justify-content: flex-start; }
+      #sendBtn { width: 100%; }
+      .chat { padding-bottom: calc(var(--surface-pad) + env(safe-area-inset-bottom, 0px)); }
+    }
+
+    @media (max-width: 640px) {
+      :root {
+        --page-gutter: 4px;
+        --surface-pad: 8px;
+        --stack-gap: 6px;
+      }
+
+      body {
+        font-size: 14px;
+      }
+
+      .title {
+        font-size: 20px;
+      }
+
+      .brand {
+        gap: 8px;
+      }
+
+      .brand-mark {
+        width: 36px;
+        height: 36px;
+        border-radius: 12px;
+      }
+
+      .header {
+        gap: 8px;
+      }
+
+      .header-right {
+        gap: 6px;
+        width: 100%;
+        justify-content: space-between;
+      }
+
+      .card {
+        border-radius: 16px;
+      }
+
+      .auth-main {
+        padding: 14px;
+        border-radius: 16px;
+      }
+
+      .auth-title {
+        font-size: 20px;
+      }
+
+      input, button, textarea {
+        border-radius: 12px;
+        padding: 10px 12px;
+      }
+
+      .tab {
+        padding: 8px 12px;
+      }
+
+      .sidebar {
+        padding: 6px;
+      }
+
+      .utility-actions {
+        gap: 6px;
+      }
+
+      .action-chip {
+        padding: 8px 10px;
+        border-radius: 12px;
+        font-size: 12px;
+      }
+
+      .block {
+        padding: 10px;
+        border-radius: 14px;
+      }
+
+      .friends-search {
+        margin-bottom: 8px;
+        padding: 8px 10px;
+      }
+
+      .item {
+        padding: 10px;
+        border-radius: 12px;
+      }
+
+      .friend-preview {
+        max-width: 160px;
+      }
+
+      .chat {
+        padding: 6px;
+        gap: 6px;
+      }
+
+      .chat-head {
+        padding: 10px;
+        border-radius: 14px;
+      }
+
+      .chat-list {
+        padding: 8px;
+        border-radius: 14px;
+      }
+
+      .bubble {
+        max-width: 88%;
+        border-radius: 14px;
+        padding: 8px 10px;
+        font-size: 13px;
+      }
+
+      .composer {
+        gap: 6px;
+      }
+
+      .composer-actions {
+        gap: 6px;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        padding-bottom: 2px;
+      }
+
+      .composer-actions .mini-btn {
+        min-width: 40px;
+        height: 42px;
+        padding: 0 10px;
+        border-radius: 10px;
+      }
+
+      textarea {
+        min-height: 62px;
+      }
+
+      #sendBtn {
+        height: 40px;
+        border-radius: 12px;
+      }
+
+      .item-top { align-items: flex-start; }
+    }
+
+    @media (max-width: 420px) {
+      .title {
+        font-size: 18px;
+      }
+
+      .brand-mark {
+        width: 32px;
+        height: 32px;
+        border-radius: 10px;
+      }
+
+      .lang-btn {
+        min-width: 42px;
+        padding: 6px 10px;
+      }
+
+      .chat-head {
+        padding: 8px;
+      }
+
+      .chat-list {
+        padding: 7px;
+      }
+
+      textarea {
+        min-height: 56px;
+      }
+
+      .friend-preview {
+        max-width: 130px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+      }
+    }
+
+    /* ── Network Error Overlay ── */
+    .net-error-overlay {
+      position: fixed;
+      inset: 0;
+      z-index: 20000;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: rgba(15, 23, 42, 0.72);
+      backdrop-filter: blur(6px);
+      padding: 18px;
+    }
+
+    .net-error-overlay.hidden { display: none !important; }
+
+    .net-error-card {
+      background: #ffffff;
+      border-radius: 24px;
+      padding: 36px 28px;
+      max-width: 360px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 24px 48px rgba(15, 23, 42, 0.24);
+      animation: cardRiseIn 0.35s ease both;
+    }
+
+    .net-error-icon {
+      font-size: 54px;
+      margin-bottom: 14px;
+    }
+
+    .net-error-title {
+      font-size: 20px;
+      font-weight: 800;
+      color: #111827;
+      margin-bottom: 8px;
+    }
+
+    .net-error-body {
+      font-size: 14px;
+      color: #6b7280;
+      margin-bottom: 24px;
+      line-height: 1.55;
+    }
+
+    .net-error-retry {
+      background: linear-gradient(90deg, #22c55e, #16a34a);
+      border: 0;
+      color: #ffffff;
+      border-radius: 14px;
+      padding: 12px 32px;
+      font-weight: 700;
+      font-size: 14px;
+      width: auto;
+      box-shadow: 0 10px 18px rgba(34, 197, 94, 0.22);
+    }
+  </style>
+</head>
+<body>
+  <div class="app">
+    <div class="header">
+      <div class="brand">
+        <div class="brand-mark"></div>
+        <div class="title">ChatsApp</div>
+      </div>
+      <div class="header-right">
+        <div class="lang-switch">
+          <button id="langZhBtn" class="lang-btn" type="button">中</button>
+          <button id="langEnBtn" class="lang-btn active" type="button">EN</button>
+        </div>
+        <div id="userBox" class="hidden" style="display:flex; gap:8px; align-items:center;">
+          <span id="currentUserText" class="muted"></span>
+          <span id="autoLoginHint" class="muted"></span>
+          <button id="logoutBtn" class="btn-secondary mini-btn" type="button" style="width:auto;">退出</button>
+        </div>
+      </div>
+    </div>
+
+    <section id="authSection" class="card auth-wrap">
+      <div class="auth-shell">
+        <div class="auth-main">
+            <div id="authProgress" class="auth-progress"></div>
+          <div class="auth-brand">
+            <div class="brand-mark"></div>
+            <div class="auth-title">ChatsApp</div>
+            <div id="authSubtitle" class="auth-subtitle">登录或注册</div>
+          </div>
+
+          <div class="tabs">
+            <button id="tabLogin" class="tab active" type="button">登录</button>
+            <button id="tabRegister" class="tab" type="button">注册</button>
+          </div>
+
+          <form id="loginForm" class="grid">
+            <input id="loginUsername" placeholder="用户名" required />
+            <input id="loginPassword" type="password" placeholder="密码" required />
+            <button id="loginBtn" class="btn-primary" type="submit">登录</button>
+          </form>
+
+          <form id="registerForm" class="grid hidden">
+            <div class="grid-2">
+              <input id="regUsername" placeholder="用户名（唯一）" required />
+              <input id="regDisplayName" placeholder="昵称" required />
+            </div>
+            <div class="grid-2">
+              <input id="regPassword" type="password" placeholder="密码（至少6位）" required />
+              <input id="regPassword2" type="password" placeholder="确认密码" required />
+            </div>
+            <button id="registerBtn" class="btn-primary" type="submit">注册</button>
+          </form>
+
+          <p id="authMsg" class="msg"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="mainSection" class="main hidden">
+      <aside id="friendsPane" class="card sidebar">
+        <div class="sidebar-top">
+          <div class="utility-actions">
+            <button id="toggleChatsBtn" class="action-chip active" type="button">聊天</button>
+            <button id="toggleAddFriendBtn" class="action-chip" type="button">加好友</button>
+            <button id="toggleRequestsBtn" class="action-chip" type="button">
+              <span id="requestsLabel">申请</span>
+              <span id="requestBadge" class="badge-dot hidden">0</span>
+            </button>
+            <button id="toggleAccountBtn" class="action-chip" type="button">账号</button>
+            <button id="refreshBtn" class="btn-secondary mini-btn" type="button">刷新</button>
+          </div>
+
+          <div class="utility-stack">
+            <div id="addFriendPanel" class="utility-panel hidden">
+              <div class="panel-head">
+                <div id="addFriendTitle" class="panel-title">添加好友</div>
+              </div>
+              <form id="addFriendForm" class="grid">
+                <input id="friendUsername" placeholder="输入用户名" required />
+                <button id="addFriendSubmitBtn" class="btn-primary" type="submit">发送申请</button>
+              </form>
+              <p id="friendMsg" class="msg"></p>
+            </div>
+
+            <div id="requestPanel" class="utility-panel hidden">
+              <div class="panel-head">
+                <div id="requestTitle" class="panel-title">好友申请</div>
+              </div>
+
+              <div class="request-tabs">
+                <button id="incomingTabBtn" class="request-tab active" type="button">收到的</button>
+                <button id="outgoingTabBtn" class="request-tab" type="button">发出的</button>
+              </div>
+
+              <div id="incomingPanel">
+                <div id="incomingList" class="list"></div>
+              </div>
+              <div id="outgoingPanel" class="hidden">
+                <div id="outgoingList" class="list"></div>
+              </div>
+            </div>
+
+            <div id="accountPanel" class="utility-panel hidden">
+              <div class="panel-head">
+                <div id="accountTitle" class="panel-title">账号管理</div>
+              </div>
+              <div class="account-avatar-row">
+                <img id="accountAvatarPreview" class="account-avatar-preview" alt="avatar" />
+                <div class="account-avatar-actions">
+                  <button id="uploadAvatarBtn" class="btn-secondary mini-btn" type="button">上传头像</button>
+                  <button id="takeAvatarBtn" class="btn-secondary mini-btn" type="button">拍照头像</button>
+                </div>
+              </div>
+              <form id="accountForm" class="grid">
+                <input id="currentPassword" type="password" placeholder="当前密码" required />
+                <input id="newPassword" type="password" placeholder="新密码（至少6位）" required />
+                <input id="newPassword2" type="password" placeholder="确认新密码" required />
+                <button id="updatePasswordBtn" class="btn-primary" type="submit">修改密码</button>
+              </form>
+              <input id="avatarInput" type="file" accept="image/*" class="hidden" />
+            </div>
+          </div>
+        </div>
+
+        <div class="block friends friends-wrap">
+          <div class="friends-head">
+            <h3 id="friendsTitle">好友</h3>
+          </div>
+          <input id="friendsSearch" class="friends-search" placeholder="搜索好友或消息" />
+          <div id="friendsList" class="friends-list"></div>
+        </div>
+      </aside>
+
+      <main id="chatPane" class="card chat hidden">
+        <div class="chat-head">
+          <button id="backToFriendsBtn" class="btn-secondary mini-btn" type="button">返回</button>
+          <div>
+            <div id="chatTitle" style="font-weight:700;">未选择好友</div>
+            <div id="chatSub" class="muted">选择一个聊天</div>
+            <div id="typingHint" class="typing-text hidden">对方正在输入...</div>
+          </div>
+        </div>
+
+        <div id="chatList" class="chat-list"></div>
+
+        <form id="chatForm" class="composer">
+          <div class="composer-actions">
+            <button id="voiceRecordBtn" class="mini-btn voice-record-btn" type="button" title="Hold to talk">Hold</button>
+            <button id="emojiToggleBtn" class="mini-btn" type="button" title="常用表情">😊</button>
+            <button id="pickImageBtn" class="mini-btn" type="button" title="上传图片">🖼</button>
+            <button id="takePhotoBtn" class="mini-btn" type="button" title="拍照发送">📷</button>
+            <button id="sendLocationBtn" class="mini-btn" type="button" title="发送定位">📍</button>
+            <button id="sendDocBtn" class="mini-btn" type="button" title="发送文件">📎</button>
+          </div>
+          <div class="composer-box">
+            <div id="emojiPicker" class="emoji-picker hidden" aria-hidden="true">
+              <div id="emojiPickerTitle" class="emoji-picker-title">常用表情</div>
+              <div id="emojiGrid" class="emoji-grid"></div>
+            </div>
+            <textarea id="chatInput" placeholder="输入消息..." disabled></textarea>
+          </div>
+          <button id="sendBtn" class="btn-primary" type="submit" disabled>发送</button>
+        </form>
+        <input id="imageInput" type="file" accept="image/*" class="hidden" />
+        <input id="docInput" type="file" accept=".pdf,.doc,.docx,.xls,.xlsx,.ppt,.pptx,.txt,.zip,.rar,.7z,.csv,.json" class="hidden" />
+      </main>
+    </section>
+  </div>
+
+  <div id="netErrorOverlay" class="net-error-overlay hidden" role="alertdialog" aria-modal="true" aria-live="assertive">
+    <div class="net-error-card">
+      <div class="net-error-icon">📡</div>
+      <div id="netErrorTitle" class="net-error-title"></div>
+      <div id="netErrorBody" class="net-error-body"></div>
+      <button id="netErrorRetryBtn" class="net-error-retry" type="button"></button>
+    </div>
+  </div>
+
+  <div id="imageViewer" class="image-viewer" aria-hidden="true">
+    <button id="imageViewerClose" class="image-viewer-close" type="button" aria-label="Close">×</button>
+    <img id="imageViewerImg" alt="preview" />
+  </div>
+
+  <div id="cameraOverlay" class="camera-overlay hidden" aria-hidden="true" role="dialog" aria-modal="true">
+    <div class="camera-card">
+      <div class="camera-toolbar">
+        <div id="cameraTitle" class="camera-title">拍照</div>
+        <button id="cameraFlipBtn" class="camera-flip-btn" type="button" title="翻转摄像头" aria-label="翻转摄像头">🔄</button>
+      </div>
+      <video id="cameraPreview" class="camera-preview" autoplay playsinline muted></video>
+      <canvas id="cameraCanvas" class="hidden"></canvas>
+      <div class="camera-actions">
+        <button id="cameraCancelBtn" class="btn-secondary" type="button">取消</button>
+        <button id="cameraCaptureBtn" class="btn-primary" type="button">拍照发送</button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module">
+        // --- 时间相关工具函数 --- //
+        function nowIso() {
+          return new Date().toISOString();
+        }
+        function toShanghaiDate(date) {
+          const d = (date instanceof Date) ? date : new Date(date);
+          if (isNaN(d.getTime())) return '';
+          return d.toLocaleString('zh-CN', { hour12: false, timeZone: 'Asia/Shanghai' });
+        }
+        function toShanghaiTime(date) {
+          const d = (date instanceof Date) ? date : new Date(date);
+          if (isNaN(d.getTime())) return '';
+          return d.toLocaleTimeString('zh-CN', { hour12: false, timeZone: 'Asia/Shanghai' });
+        }
+    import { createClient } from "https://esm.sh/@supabase/supabase-js@2.49.8";
+    // --- 最优在线状态检测与同步 --- //
+    // 1. 页面关闭、刷新、切换、断网时，及时下线
+    function handleOfflineOrUnload() {
+      if (typeof markOffline === 'function') {
+        try {
+          const session = localStorage.getItem("chatsapp_session_v1");
+          if (session) {
+            const { sessionId, userId } = JSON.parse(session);
+            if (sessionId && userId) {
+              // 可选：后端可实现 mark_user_offline rpc，前端用 sendBeacon
+              // const url = `${SUPABASE_URL}/rest/v1/rpc/mark_user_offline`;
+              // const payload = JSON.stringify({ session_id: sessionId, user_id: userId });
+              // navigator.sendBeacon(url, payload);
+            }
+          }
+        } catch {}
+        markOffline().catch(() => {});
+      }
+    }
+    window.addEventListener("beforeunload", handleOfflineOrUnload);
+    window.addEventListener("pagehide", handleOfflineOrUnload);
+    window.addEventListener("offline", handleOfflineOrUnload);
+
+    // 2. 页面激活/恢复/联网时，立即上线
+    function handleOnlineOrFocus() {
+      if (typeof updatePresence === 'function') {
+        updatePresence().catch(() => {});
+      }
+    }
+    window.addEventListener("focus", handleOnlineOrFocus);
+    window.addEventListener("pageshow", handleOnlineOrFocus);
+    window.addEventListener("online", handleOnlineOrFocus);
+
+    // 3. 定时心跳，确保在线状态持续
+    setInterval(() => {
+      if (typeof updatePresence === 'function') {
+        updatePresence().catch(() => {});
+      }
+    }, 10000); // 每10秒心跳
+
+    const SUPABASE_URL = "https://flpgenvqddfldarmxvyj.supabase.co";
+    const SUPABASE_PUBLISHABLE_KEY = "sb_publishable_hvQxGI1srNFRKuAAwFDW1g_8NAjqq2T";
+    const supabase = createClient(SUPABASE_URL, SUPABASE_PUBLISHABLE_KEY);
+
+    function assertNoDbError(error, prefix = "Database") {
+      if (!error) return;
+      const msg = error.message || error.details || error.hint || "Unknown database error";
+      throw new Error(`${prefix}: ${msg}`);
+    }
+
+    const POLL_MS = 1600;
+    const ACTIVE_CHAT_SYNC_MIN_INTERVAL_MS = 1300;
+    const SESSION_TTL_MS = 30 * 24 * 60 * 60 * 1000;
+    const MAX_MESSAGE_ROWS = 50;
+    const CHAT_FETCH_ROWS = 120;
+    const MAX_IMAGE_FILE_MB = 3;
+    const MAX_DOC_FILE_MB = 10;
+    const MAX_AVATAR_FILE_MB = 2;
+    const TYPING_SEND_MIN_INTERVAL_MS = 1200;
+    const TYPING_IDLE_CLEAR_MS = 3000;
+    const APP_TIME_ZONE = "Asia/Shanghai";
+    const LOCATION_REQUEST_TOTAL_TIMEOUT_MS = 22000;
+    const AUTH_CACHE_STORAGE_KEY = "chatsapp_auth_cache_v1";
+    const USER_CACHE_STORAGE_KEY = "chatsapp_user_cache_v1";
+    const SESSION_STORAGE_KEY = "chatsapp_session_v1";
+    const LANGUAGE_STORAGE_KEY = "chatsapp_lang_v2";
+    const FRIEND_CACHE_PREFIX = "chatsapp_friends_";
+    const AVATAR_CACHE_PREFIX = "chatsapp_avatar_";
+    const TRANSLATIONS = {
+      zh: {
+        authSubtitle: "登录或注册",
+        autoLoginEnabled: "已启用自动登录",
+        autoLoginBySession: "自动登录：会话恢复",
+        autoLoginByCredentials: "自动登录：密码缓存恢复",
+        autoLoginByUserCache: "自动登录：本地缓存恢复",
+        logout: "退出",
+        login: "登录",
+        register: "注册",
+        usernamePlaceholder: "用户名",
+        passwordPlaceholder: "密码",
+        registerUsernamePlaceholder: "用户名（唯一）",
+        displayNamePlaceholder: "昵称",
+        registerPasswordPlaceholder: "密码（至少6位）",
+        confirmPasswordPlaceholder: "确认密码",
+        chats: "聊天",
+        refresh: "刷新",
+        addFriend: "加好友",
+        requests: "申请",
+        account: "账号",
+        addFriendTitle: "添加好友",
+        friendUsernamePlaceholder: "输入用户名",
+        sendRequest: "发送申请",
+        requestTitle: "好友申请",
+        accountTitle: "账号管理",
+        currentPasswordPlaceholder: "当前密码",
+        newPasswordPlaceholder: "新密码（至少6位）",
+        confirmNewPasswordPlaceholder: "确认新密码",
+        updatePassword: "修改密码",
+        passwordUpdated: "密码修改成功",
+        currentPasswordWrong: "当前密码不正确",
+        uploadAvatar: "上传头像",
+        takeAvatar: "拍照头像",
+        avatarUpdated: "头像更新成功",
+        avatarUpdateFailed: "头像更新失败：{message}",
+        avatarColumnMissing: "数据库 users 表缺少 avatar_data 字段，头像仅保存在本地缓存",
+        incoming: "收到的",
+        outgoing: "发出的",
+        friends: "好友",
+        selfChat: "我的备忘录",
+        searchChats: "搜索好友或消息",
+        noSearchResults: "没有匹配的会话",
+        deletedMessage: "[消息已删除]",
+        deleteMessage: "删除",
+        imageLabel: "[图片]",
+        locationLabel: "[定位]",
+        noFriendSelected: "未选择好友",
+        selectChat: "选择一个聊天",
+        typing: "对方正在输入...",
+        messagePlaceholder: "输入消息...",
+        uploadImage: "上传图片",
+        startRecording: "录音",
+        stopRecording: "停止",
+        recordingVoice: "正在录音...",
+        voiceReadyToSend: "语音已就绪，点击发送",
+        discardVoice: "丢弃语音",
+        takePhoto: "拍照",
+        cameraTitle: "拍照",
+        cameraCancel: "取消",
+        cameraCapture: "拍照发送",
+        cameraFlip: "翻转摄像头",
+        sendLocation: "定位",
+        imageMessage: "图片",
+        voiceMessage: "语音",
+        voiceLabel: "[语音]",
+        voiceMessageDuration: "语音 {seconds}s",
+        locationMessage: "位置",
+        openMap: "打开地图",
+        readingImageFailed: "读取图片失败：{message}",
+        imageTooLarge: "图片过大，请选择小于 {size}MB 的图片",
+        microphoneNotSupported: "当前设备不支持语音录制",
+        microphonePermissionDenied: "麦克风不可用：{message}",
+        voiceTooShort: "录音时间太短",
+        voiceReadFailed: "语音处理失败：{message}",
+        sendDocument: "文件",
+        documentLabel: "[文件]",
+        documentMessage: "文件",
+        documentTooLarge: "文件过大，请选择小于 {size}MB 的文件",
+        readingDocumentFailed: "读取文件失败：{message}",
+        locationNotSupported: "当前设备不支持定位",
+        locationInsecure: "定位需要 HTTPS 连接，请使用安全网络",
+        locationPermissionDenied: "定位权限被拒绝，请在浏览器设置中允许定位",
+        locationUnavailable: "无法获取位置信息，请检查设备定位服务是否开启",
+        locationTimeout: "获取定位超时，请稍后重试",
+        locationDenied: "定位失败：{message}",
+        cameraNotSupported: "当前设备不支持相机拍照",
+        cameraInsecure: "拍照需要 HTTPS 连接，请使用安全网络",
+        cameraPermissionDenied: "相机权限被拒绝，请在浏览器设置中允许相机权限",
+        cameraOpenFailed: "无法打开相机：{message}",
+        locationMessageIP: "IP 定位（近似位置）",
+        locationIPFailed: "GPS 和 IP 定位均失败，请检查网络或设备定位服务",
+        close: "关闭",
+        imagePreviewAlt: "图片预览",
+        send: "发送",
+        noOnlineRecord: "暂无在线记录",
+        justNow: "刚刚在线",
+        secondsAgo: "{count} 秒前",
+        minutesAgo: "{count} 分钟前",
+        todayTime: "今天 {time}",
+        yesterdayTime: "昨天 {time}",
+        daysAgo: "{count} 天前",
+        noIncomingRequests: "暂无收到的申请",
+        accept: "同意",
+        reject: "拒绝",
+        noOutgoingRequests: "暂无发出的申请",
+        sentAt: "已发送 {time}",
+        noFriends: "暂无好友",
+        online: "在线",
+        lastSeen: "上次在线 {time}",
+        selectFriendToChat: "选择一个好友开始聊天",
+        back: "返回",
+        loadingMessages: "加载消息中...",
+        noMessages: "暂无消息",
+        sending: "发送中...",
+        peerRead: "对方已读",
+        peerUnread: "对方未读",
+        newMessageAlert: "新消息提醒",
+        newMessageFrom: "来自 {name} 的 {count} 条新消息",
+        notificationPermissionDenied: "未开启通知权限，系统通知不可用",
+        refreshing: "刷新中",
+        refreshFailed: "刷新失败：{message}",
+        unknownError: "未知错误",
+        usernameMin: "用户名至少 3 位",
+        usernameRule: "用户名仅支持字母、数字、下划线",
+        displayNameMin: "昵称至少 2 位",
+        passwordMin: "密码至少 6 位",
+        passwordMismatch: "两次输入密码不一致",
+        registerSuccess: "注册成功，请登录",
+        usernameExists: "用户名已存在，请更换",
+        registerFailed: "注册失败：{message}",
+        needCredentials: "请输入用户名和密码",
+        wrongCredentials: "用户名或密码错误",
+        loginFailed: "登录失败：{message}",
+        loggedOut: "已退出",
+        enterTargetUsername: "请输入对方用户名",
+        sendFailed: "发送失败：{message}",
+        acceptedRequest: "已同意好友申请",
+        rejectedRequest: "已拒绝好友申请",
+        processFailed: "处理失败：{message}",
+        messageSendFailed: "发送消息失败：{message}",
+        typingUpdateFailed: "输入状态更新失败：{message}",
+        promptRegisterLogin: "请先注册或登录",
+        dbInitFailed: "数据库初始化失败：{message}",
+        userNotFound: "用户不存在",
+        cannotAddSelf: "不能添加自己",
+        alreadyFriends: "你们已经是好友",
+        autoBecameFriends: "对方已申请你，已自动互为好友",
+        requestAlreadySent: "好友申请已发送，请等待通过",
+        requestSentTo: "已向 @{username} 发送申请",
+        userDefaultName: "用户",
+        noInternetTitle: "未连接到互联网",
+        noInternetBody: "请连接互联网",
+        retryConnection: "重试",
+        refreshCompleteTitle: "刷新完成",
+        refreshCompleteBody: "页面数据已更新",
+        emojiButton: "常用表情",
+        emojiTitle: "常用表情",
+      },
+      en: {
+        authSubtitle: "Sign in or create account",
+        autoLoginEnabled: "Auto-login enabled",
+        autoLoginBySession: "Auto-login: session restored",
+        autoLoginByCredentials: "Auto-login: credentials cache",
+        autoLoginByUserCache: "Auto-login: local cache",
+        logout: "Log out",
+        login: "Sign in",
+        register: "Sign up",
+        usernamePlaceholder: "Username",
+        passwordPlaceholder: "Password",
+        registerUsernamePlaceholder: "Username (unique)",
+        displayNamePlaceholder: "Display name",
+        registerPasswordPlaceholder: "Password (min 6 chars)",
+        confirmPasswordPlaceholder: "Confirm password",
+        chats: "Chats",
+        refresh: "Refresh",
+        addFriend: "Add friend",
+        requests: "Requests",
+        account: "Account",
+        addFriendTitle: "Add friend",
+        friendUsernamePlaceholder: "Enter username",
+        sendRequest: "Send request",
+        requestTitle: "Friend requests",
+        accountTitle: "Account",
+        currentPasswordPlaceholder: "Current password",
+        newPasswordPlaceholder: "New password (min 6 chars)",
+        confirmNewPasswordPlaceholder: "Confirm new password",
+        updatePassword: "Update password",
+        passwordUpdated: "Password updated",
+        currentPasswordWrong: "Current password is incorrect",
+        uploadAvatar: "Upload avatar",
+        takeAvatar: "Take avatar photo",
+        avatarUpdated: "Avatar updated",
+        avatarUpdateFailed: "Avatar update failed: {message}",
+        avatarColumnMissing: "users table is missing avatar_data column, avatar is only saved locally",
+        incoming: "Received",
+        outgoing: "Sent",
+        friends: "Friends",
+        selfChat: "Saved Messages",
+        searchChats: "Search chats or message",
+        noSearchResults: "No matching chats",
+        deletedMessage: "[Message deleted]",
+        deleteMessage: "Delete",
+        imageLabel: "[Image]",
+        locationLabel: "[Location]",
+        noFriendSelected: "No chat selected",
+        selectChat: "Select a chat",
+        typing: "Typing...",
+        messagePlaceholder: "Type a message...",
+        uploadImage: "Image",
+        startRecording: "Record",
+        stopRecording: "Stop",
+        recordingVoice: "Recording...",
+        voiceReadyToSend: "Voice ready — tap Send",
+        discardVoice: "Discard",
+        takePhoto: "Camera",
+        cameraTitle: "Camera",
+        cameraCancel: "Cancel",
+        cameraCapture: "Capture & Send",
+        cameraFlip: "Flip camera",
+        sendLocation: "Location",
+        imageMessage: "Image",
+        voiceMessage: "Voice",
+        voiceLabel: "[Voice]",
+        voiceMessageDuration: "Voice {seconds}s",
+        locationMessage: "Location",
+        openMap: "Open map",
+        readingImageFailed: "Image read failed: {message}",
+        imageTooLarge: "Image too large. Please pick one under {size}MB",
+        microphoneNotSupported: "Voice recording is not supported on this device",
+        microphonePermissionDenied: "Microphone unavailable: {message}",
+        voiceTooShort: "Recording is too short",
+        voiceReadFailed: "Voice processing failed: {message}",
+        sendDocument: "File",
+        documentLabel: "[File]",
+        documentMessage: "File",
+        documentTooLarge: "File too large. Please pick one under {size}MB",
+        readingDocumentFailed: "File read failed: {message}",
+        locationNotSupported: "Geolocation is not supported on this device",
+        locationInsecure: "Location requires HTTPS. Please use a secure connection.",
+        locationPermissionDenied: "Location permission denied. Please allow it in browser settings.",
+        locationUnavailable: "Location unavailable. Please check that location services are enabled.",
+        locationTimeout: "Location request timed out. Please try again.",
+        locationDenied: "Location failed: {message}",
+        cameraNotSupported: "Camera capture is not supported on this device",
+        cameraInsecure: "Camera capture requires HTTPS. Please use a secure connection.",
+        cameraPermissionDenied: "Camera permission denied. Please allow camera access in browser settings.",
+        cameraOpenFailed: "Failed to open camera: {message}",
+        locationMessageIP: "Location (IP-based, approximate)",
+        locationIPFailed: "Both GPS and IP location failed. Check your network or device location services.",
+        close: "Close",
+        imagePreviewAlt: "Image preview",
+        send: "Send",
+        noOnlineRecord: "No activity yet",
+        justNow: "Just now",
+        secondsAgo: "{count}s ago",
+        minutesAgo: "{count}m ago",
+        todayTime: "Today {time}",
+        yesterdayTime: "Yesterday {time}",
+        daysAgo: "{count}d ago",
+        noIncomingRequests: "No incoming requests",
+        accept: "Accept",
+        reject: "Decline",
+        noOutgoingRequests: "No outgoing requests",
+        sentAt: "Sent {time}",
+        noFriends: "No friends yet",
+        online: "Online",
+        lastSeen: "Last seen {time}",
+        selectFriendToChat: "Select a friend to start chatting",
+        back: "Back",
+        loadingMessages: "Loading messages...",
+        noMessages: "No messages yet",
+        sending: "Sending...",
+        peerRead: "Read",
+        peerUnread: "Unread",
+        newMessageAlert: "New message",
+        newMessageFrom: "{count} new message(s) from {name}",
+        notificationPermissionDenied: "Notification permission is disabled",
+        refreshing: "Refreshing",
+        refreshFailed: "Refresh failed: {message}",
+        unknownError: "Unknown error",
+        usernameMin: "Username must be at least 3 characters",
+        usernameRule: "Username can only contain letters, numbers, and underscores",
+        displayNameMin: "Display name must be at least 2 characters",
+        passwordMin: "Password must be at least 6 characters",
+        passwordMismatch: "Passwords do not match",
+        registerSuccess: "Registration complete. Please sign in.",
+        usernameExists: "Username already exists",
+        registerFailed: "Registration failed: {message}",
+        needCredentials: "Enter username and password",
+        wrongCredentials: "Wrong username or password",
+        loginFailed: "Login failed: {message}",
+        loggedOut: "Logged out",
+        enterTargetUsername: "Enter your friend's username",
+        sendFailed: "Send failed: {message}",
+        acceptedRequest: "Friend request accepted",
+        rejectedRequest: "Friend request declined",
+        processFailed: "Action failed: {message}",
+        messageSendFailed: "Message failed: {message}",
+        typingUpdateFailed: "Typing status failed: {message}",
+        promptRegisterLogin: "Please sign in or create an account",
+        dbInitFailed: "Database init failed: {message}",
+        userNotFound: "User not found",
+        cannotAddSelf: "You cannot add yourself",
+        alreadyFriends: "You are already friends",
+        autoBecameFriends: "They already requested you. Friendship created.",
+        requestAlreadySent: "Request already sent",
+        requestSentTo: "Request sent to @{username}",
+        userDefaultName: "User",
+        noInternetTitle: "Not connected to the internet",
+        noInternetBody: "Please connect to the internet",
+        retryConnection: "Retry",
+        refreshCompleteTitle: "Refresh complete",
+        refreshCompleteBody: "Page data is up to date",
+        emojiButton: "Emoji",
+        emojiTitle: "Common emoji",
+      },
+    };
+
+    const els = {
+      authSection: document.getElementById("authSection"),
+      mainSection: document.getElementById("mainSection"),
+      friendsPane: document.getElementById("friendsPane"),
+      chatPane: document.getElementById("chatPane"),
+      userBox: document.getElementById("userBox"),
+      currentUserText: document.getElementById("currentUserText"),
+      autoLoginHint: document.getElementById("autoLoginHint"),
+      logoutBtn: document.getElementById("logoutBtn"),
+      langZhBtn: document.getElementById("langZhBtn"),
+      langEnBtn: document.getElementById("langEnBtn"),
+      authSubtitle: document.getElementById("authSubtitle"),
+
+      tabLogin: document.getElementById("tabLogin"),
+      tabRegister: document.getElementById("tabRegister"),
+      loginBtn: document.getElementById("loginBtn"),
+      registerBtn: document.getElementById("registerBtn"),
+      loginForm: document.getElementById("loginForm"),
+      registerForm: document.getElementById("registerForm"),
+      authMsg: document.getElementById("authMsg"),
+
+      loginUsername: document.getElementById("loginUsername"),
+      loginPassword: document.getElementById("loginPassword"),
+
+      regUsername: document.getElementById("regUsername"),
+      regDisplayName: document.getElementById("regDisplayName"),
+      regPassword: document.getElementById("regPassword"),
+      regPassword2: document.getElementById("regPassword2"),
+
+      addFriendForm: document.getElementById("addFriendForm"),
+      friendUsername: document.getElementById("friendUsername"),
+      friendMsg: document.getElementById("friendMsg"),
+      toggleChatsBtn: document.getElementById("toggleChatsBtn"),
+      toggleAddFriendBtn: document.getElementById("toggleAddFriendBtn"),
+      toggleRequestsBtn: document.getElementById("toggleRequestsBtn"),
+      toggleAccountBtn: document.getElementById("toggleAccountBtn"),
+      requestsLabel: document.getElementById("requestsLabel"),
+      sectionTitle: document.getElementById("sectionTitle"),
+      addFriendPanel: document.getElementById("addFriendPanel"),
+      requestPanel: document.getElementById("requestPanel"),
+      accountPanel: document.getElementById("accountPanel"),
+      addFriendTitle: document.getElementById("addFriendTitle"),
+      addFriendSubmitBtn: document.getElementById("addFriendSubmitBtn"),
+      requestTitle: document.getElementById("requestTitle"),
+      accountTitle: document.getElementById("accountTitle"),
+      accountForm: document.getElementById("accountForm"),
+      currentPassword: document.getElementById("currentPassword"),
+      newPassword: document.getElementById("newPassword"),
+      newPassword2: document.getElementById("newPassword2"),
+      updatePasswordBtn: document.getElementById("updatePasswordBtn"),
+      uploadAvatarBtn: document.getElementById("uploadAvatarBtn"),
+      takeAvatarBtn: document.getElementById("takeAvatarBtn"),
+      accountAvatarPreview: document.getElementById("accountAvatarPreview"),
+      avatarInput: document.getElementById("avatarInput"),
+      incomingTabBtn: document.getElementById("incomingTabBtn"),
+      outgoingTabBtn: document.getElementById("outgoingTabBtn"),
+      incomingPanel: document.getElementById("incomingPanel"),
+      outgoingPanel: document.getElementById("outgoingPanel"),
+      requestBadge: document.getElementById("requestBadge"),
+      friendsTitle: document.getElementById("friendsTitle"),
+      friendsSearch: document.getElementById("friendsSearch"),
+
+      incomingList: document.getElementById("incomingList"),
+      outgoingList: document.getElementById("outgoingList"),
+      friendsList: document.getElementById("friendsList"),
+
+      chatTitle: document.getElementById("chatTitle"),
+      chatSub: document.getElementById("chatSub"),
+      typingHint: document.getElementById("typingHint"),
+      backToFriendsBtn: document.getElementById("backToFriendsBtn"),
+      chatList: document.getElementById("chatList"),
+      chatForm: document.getElementById("chatForm"),
+      chatInput: document.getElementById("chatInput"),
+      voiceRecordBtn: document.getElementById("voiceRecordBtn"),
+      emojiToggleBtn: document.getElementById("emojiToggleBtn"),
+      emojiPicker: document.getElementById("emojiPicker"),
+      emojiPickerTitle: document.getElementById("emojiPickerTitle"),
+      emojiGrid: document.getElementById("emojiGrid"),
+      pickImageBtn: document.getElementById("pickImageBtn"),
+      takePhotoBtn: document.getElementById("takePhotoBtn"),
+      sendLocationBtn: document.getElementById("sendLocationBtn"),
+      sendDocBtn: document.getElementById("sendDocBtn"),
+      imageInput: document.getElementById("imageInput"),
+      docInput: document.getElementById("docInput"),
+      imageViewer: document.getElementById("imageViewer"),
+      imageViewerImg: document.getElementById("imageViewerImg"),
+      imageViewerClose: document.getElementById("imageViewerClose"),
+      cameraOverlay: document.getElementById("cameraOverlay"),
+      cameraTitle: document.getElementById("cameraTitle"),
+      cameraPreview: document.getElementById("cameraPreview"),
+      cameraCanvas: document.getElementById("cameraCanvas"),
+      cameraCancelBtn: document.getElementById("cameraCancelBtn"),
+      cameraCaptureBtn: document.getElementById("cameraCaptureBtn"),
+      cameraFlipBtn: document.getElementById("cameraFlipBtn"),
+      sendBtn: document.getElementById("sendBtn"),
+      refreshBtn: document.getElementById("refreshBtn"),
+    };
+
+    let authMode = "login";
+    let currentUser = null;
+    let selectedFriend = null;
+    let pollTimer = null;
+    let refreshRunning = false;
+    let activeUtilityPanel = null;
+    let requestTab = "incoming";
+    let sessionId = null;
+    let latestFriends = [];
+    let lastFriendsRenderKey = "";
+    let lastMessagesRenderKey = "";
+    let refreshBtnLoading = false;
+    let currentConversationRows = [];
+    let currentConversationFriendId = null;
+    let isConversationLoading = false;
+    let lastActiveChatSyncAt = 0;
+    let friendSearchKeyword = "";
+    const conversationCacheByFriend = new Map();
+    const pendingMessagesByFriend = new Map();
+    const unreadSnapshotByFriend = new Map();
+    const lastNotifiedMessageAtByFriend = new Map();
+    let unreadSnapshotReady = false;
+    let lastTotalUnreadCount = 0;
+    let activeToastTimer = null;
+    let notificationAudioContext = null;
+    let notificationAudioUnlocked = false;
+    let typingSendTimer = null;
+    let typingClearTimer = null;
+    let lastTypingSentAt = 0;
+    let typingTargetFriendId = null;
+    let voiceMediaRecorder = null;
+    let voiceRecordingStream = null;
+    let voiceRecordingChunks = [];
+    let voiceRecordingStartAt = 0;
+    let voiceRecordingTargetFriendId = null;
+    let voiceRecordingSendOnStop = false;
+    let nativeVoiceRecording = false;
+    let voiceReadyBlob = null;
+    let voiceReadyMediaData = "";
+    let voiceReadyContent = "";
+    let cameraStream = null;
+    let cameraFacingMode = "environment";
+    let cameraDeviceIds = [];
+    let cameraDeviceIndex = 0;
+    let cameraCaptureMode = "chat";
+    let selectedFriendGuardUntil = 0;
+    let bootstrapInProgress = true;
+    let autoLoginHintKey = "";
+    let emojiPickerOpen = false;
+    let currentLanguage = localStorage.getItem(LANGUAGE_STORAGE_KEY)
+      || "en";
+    const COMMON_EMOJIS = ["😀", "😁", "😂", "🤣", "😊", "😍", "😘", "🥰", "😎", "🤔", "😴", "😭", "😡", "👍", "👏", "🙏", "💪", "🎉", "🔥", "❤️", "💖", "✨", "🌹", "🍀"];
+
+    function t(key, vars = {}) {
+      const messages = TRANSLATIONS[currentLanguage] || TRANSLATIONS.zh;
+      const fallback = TRANSLATIONS.zh[key] || key;
+      const template = messages[key] || fallback;
+      return String(template).replace(/\{(\w+)\}/g, (_, name) => String(vars[name] ?? ""));
+    }
+
+    function currentLocale() {
+      return currentLanguage === "en" ? "en-US" : "zh-CN";
+    }
+
+    function parseDbTime(v) {
+      if (!v) return null;
+      if (v instanceof Date) return Number.isNaN(v.getTime()) ? null : v;
+
+      if (typeof v === "string") {
+        const raw = v.trim();
+        if (!raw) return null;
+
+        // Treat DB timestamps without timezone as China local time.
+        if (/Z|[+-]\d{2}:\d{2}$/.test(raw)) {
+          const withTz = new Date(raw);
+          return Number.isNaN(withTz.getTime()) ? null : withTz;
+        }
+
+        const normalized = raw.replace(" ", "T");
+        const asChinaTime = new Date(`${normalized}+08:00`);
+        return Number.isNaN(asChinaTime.getTime()) ? null : asChinaTime;
+      }
+
+      const d = new Date(v);
+      return Number.isNaN(d.getTime()) ? null : d;
+    }
+
+    function getShanghaiDayNumber(d) {
+      const parts = new Intl.DateTimeFormat("en-CA", {
+        timeZone: APP_TIME_ZONE,
+        year: "numeric",
+        month: "2-digit",
+        day: "2-digit",
+      }).formatToParts(d);
+
+      const year = Number(parts.find((p) => p.type === "year")?.value || 0);
+      const month = Number(parts.find((p) => p.type === "month")?.value || 0);
+      const day = Number(parts.find((p) => p.type === "day")?.value || 0);
+      return Math.floor(Date.UTC(year, month - 1, day) / 86400000);
+    }
+
+    function applyLanguage() {
+      localStorage.setItem(LANGUAGE_STORAGE_KEY, currentLanguage);
+      document.documentElement.lang = currentLanguage === "en" ? "en" : "zh-CN";
+      els.langZhBtn.classList.toggle("active", currentLanguage === "zh");
+      els.langEnBtn.classList.toggle("active", currentLanguage === "en");
+      document.title = "ChatsApp";
+
+      els.logoutBtn.textContent = t("logout");
+      els.autoLoginHint.textContent = autoLoginHintKey ? t(autoLoginHintKey) : "";
+      els.authSubtitle.textContent = t("authSubtitle");
+      els.tabLogin.textContent = t("login");
+      els.tabRegister.textContent = t("register");
+      els.loginUsername.placeholder = t("usernamePlaceholder");
+      els.loginPassword.placeholder = t("passwordPlaceholder");
+      els.loginBtn.textContent = t("login");
+      els.regUsername.placeholder = t("registerUsernamePlaceholder");
+      els.regDisplayName.placeholder = t("displayNamePlaceholder");
+      els.regPassword.placeholder = t("registerPasswordPlaceholder");
+      els.regPassword2.placeholder = t("confirmPasswordPlaceholder");
+      els.registerBtn.textContent = t("register");
+      els.toggleChatsBtn.textContent = t("chats");
+      renderRefreshButton();
+      els.toggleAddFriendBtn.textContent = t("addFriend");
+      els.toggleAccountBtn.textContent = t("account");
+      els.requestsLabel.textContent = t("requests");
+      els.addFriendTitle.textContent = t("addFriendTitle");
+      els.friendUsername.placeholder = t("friendUsernamePlaceholder");
+      els.addFriendSubmitBtn.textContent = t("sendRequest");
+      els.requestTitle.textContent = t("requestTitle");
+      els.accountTitle.textContent = t("accountTitle");
+      els.currentPassword.placeholder = t("currentPasswordPlaceholder");
+      els.newPassword.placeholder = t("newPasswordPlaceholder");
+      els.newPassword2.placeholder = t("confirmNewPasswordPlaceholder");
+      els.updatePasswordBtn.textContent = t("updatePassword");
+      els.uploadAvatarBtn.textContent = t("uploadAvatar");
+      els.takeAvatarBtn.textContent = t("takeAvatar");
+      els.incomingTabBtn.textContent = t("incoming");
+      els.outgoingTabBtn.textContent = t("outgoing");
+      els.friendsTitle.textContent = t("friends");
+      els.friendsSearch.placeholder = t("searchChats");
+      els.typingHint.textContent = t("typing");
+      els.chatInput.placeholder = t("messagePlaceholder");
+      updateVoiceRecordButton();
+      els.pickImageBtn.textContent = t("uploadImage");
+      els.pickImageBtn.title = t("uploadImage");
+      els.takePhotoBtn.textContent = t("takePhoto");
+      els.takePhotoBtn.title = t("takePhoto");
+      els.sendLocationBtn.textContent = t("sendLocation");
+      els.sendLocationBtn.title = t("sendLocation");
+      els.sendDocBtn.textContent = t("sendDocument");
+      els.sendDocBtn.title = t("sendDocument");
+      els.emojiToggleBtn.title = t("emojiButton");
+      els.emojiPickerTitle.textContent = t("emojiTitle");
+      els.sendBtn.textContent = t("send");
+      els.backToFriendsBtn.textContent = t("back");
+      els.imageViewerClose.setAttribute("aria-label", t("close"));
+      els.imageViewerImg.alt = t("imagePreviewAlt");
+      els.cameraTitle.textContent = t("cameraTitle");
+      els.cameraCancelBtn.textContent = t("cameraCancel");
+      els.cameraCaptureBtn.textContent = t("cameraCapture");
+      if (els.cameraFlipBtn) {
+        els.cameraFlipBtn.title = t("cameraFlip");
+        els.cameraFlipBtn.setAttribute("aria-label", t("cameraFlip"));
+      }
+      updateAccountAvatarPreview();
+
+      lastFriendsRenderKey = "";
+      renderFriends(latestFriends);
+
+      lastMessagesRenderKey = "";
+      if (selectedFriend) {
+        renderMessages(currentConversationRows);
+      }
+
+      if (!selectedFriend) {
+        els.chatTitle.textContent = t("noFriendSelected");
+      }
+      renderChatStatus(selectedFriend);
+      if (!currentUser) {
+        renderMessages([]);
+      }
+
+      const netOverlay = document.getElementById("netErrorOverlay");
+      if (netOverlay && !netOverlay.classList.contains("hidden")) {
+        document.getElementById("netErrorTitle").textContent = t("noInternetTitle");
+        document.getElementById("netErrorBody").textContent = t("noInternetBody");
+        document.getElementById("netErrorRetryBtn").textContent = t("retryConnection");
+      }
+    }
+
+    function setLanguage(language) {
+      currentLanguage = language === "en" ? "en" : "zh";
+      applyLanguage();
+      if (currentUser) {
+        refreshAll().catch(() => {});
+      }
+    }
+
+    function setAuthMsg(text, ok = false) {
+      els.authMsg.style.color = ok ? "#86efac" : "#fca5a5";
+      els.authMsg.textContent = text;
+    }
+
+    function setFriendMsg(text, ok = false) {
+      els.friendMsg.style.color = ok ? "#86efac" : "#fca5a5";
+      els.friendMsg.textContent = text;
+    }
+
+    function renderRefreshButton() {
+      if (!els.refreshBtn) return;
+      const label = refreshBtnLoading ? t("refreshing") : t("refresh");
+      els.refreshBtn.classList.toggle("loading", refreshBtnLoading);
+      els.refreshBtn.setAttribute("aria-busy", refreshBtnLoading ? "true" : "false");
+      els.refreshBtn.innerHTML = `<span class="refresh-btn-content"><span class="refresh-icon" aria-hidden="true">↻</span><span>${label}</span></span>`;
+    }
+
+    function showRefreshCompleteToast() {
+      showInAppNotification(t("refreshCompleteTitle"), t("refreshCompleteBody"));
+    }
+
+    async function waitForRefreshIdle(timeoutMs = 6000) {
+      const deadline = Date.now() + timeoutMs;
+      while (refreshRunning && Date.now() < deadline) {
+        await new Promise((resolve) => setTimeout(resolve, 120));
+      }
+    }
+
+    async function ensureInternetConnection({ showModal = false } = {}) {
+      const connected = navigator.onLine;
+      if (connected) {
+        hideNetworkErrorModal();
+      } else if (showModal) {
+        showNetworkErrorModal();
+      }
+      return connected;
+    }
+
+    function isNetworkError(error) {
+      if (!navigator.onLine) return true;
+      const msg = String(error?.message || "").toLowerCase();
+      return (
+        msg.includes("failed to fetch")
+        || msg.includes("network request failed")
+        || msg.includes("fetch failed")
+        || msg.includes("networkerror")
+        || msg.includes("net::err_")
+        || msg.includes("load failed")
+        || msg.includes("connection refused")
+        || msg.includes("timeout")
+      );
+    }
+
+    function showNetworkErrorModal() {
+      const overlay = document.getElementById("netErrorOverlay");
+      if (!overlay) return;
+      document.getElementById("netErrorTitle").textContent = t("noInternetTitle");
+      document.getElementById("netErrorBody").textContent = t("noInternetBody");
+      document.getElementById("netErrorRetryBtn").textContent = t("retryConnection");
+      overlay.classList.remove("hidden");
+    }
+
+    function hideNetworkErrorModal() {
+      const overlay = document.getElementById("netErrorOverlay");
+      if (overlay) overlay.classList.add("hidden");
+    }
+
+    function renderEmojiPicker() {
+      if (!els.emojiGrid) return;
+      els.emojiGrid.innerHTML = COMMON_EMOJIS.map((emoji) => (
+        `<button class="emoji-btn" type="button" data-emoji="${emoji}" aria-label="${emoji}">${emoji}</button>`
+      )).join("");
+    }
+
+    function setEmojiPickerOpen(open) {
+      emojiPickerOpen = !!open;
+      if (!els.emojiPicker || !els.emojiToggleBtn) return;
+      els.emojiPicker.classList.toggle("hidden", !emojiPickerOpen);
+      els.emojiPicker.setAttribute("aria-hidden", emojiPickerOpen ? "false" : "true");
+      els.emojiToggleBtn.classList.toggle("active", emojiPickerOpen);
+    }
+
+    function closeEmojiPicker() {
+      setEmojiPickerOpen(false);
+    }
+
+    function insertEmojiIntoChat(emoji) {
+      if (!emoji || els.chatInput.disabled) return;
+      const input = els.chatInput;
+      const start = Number.isInteger(input.selectionStart) ? input.selectionStart : input.value.length;
+      const end = Number.isInteger(input.selectionEnd) ? input.selectionEnd : input.value.length;
+      const before = input.value.slice(0, start);
+      const after = input.value.slice(end);
+      input.value = `${before}${emoji}${after}`;
+      const cursor = start + emoji.length;
+      input.focus();
+      input.setSelectionRange(cursor, cursor);
+      input.dispatchEvent(new Event("input", { bubbles: true }));
+    }
+
+    function openImageViewer(src) {
+      if (!src) return;
+      els.imageViewerImg.src = src;
+      els.imageViewer.classList.add("show");
+      els.imageViewer.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    }
+
+    function closeImageViewer() {
+      els.imageViewer.classList.remove("show");
+      els.imageViewer.setAttribute("aria-hidden", "true");
+      els.imageViewerImg.removeAttribute("src");
+      document.body.style.overflow = "";
+    }
+
+    function stopCameraStream() {
+      if (!cameraStream) return;
+      cameraStream.getTracks().forEach((track) => {
+        try { track.stop(); } catch {}
+      });
+      cameraStream = null;
+      if (els.cameraPreview) {
+        els.cameraPreview.srcObject = null;
+      }
+    }
+
+    function closeCameraOverlay() {
+      stopCameraStream();
+      if (!els.cameraOverlay) return;
+      els.cameraOverlay.classList.add("hidden");
+      els.cameraOverlay.setAttribute("aria-hidden", "true");
+    }
+
+    async function startCameraStream(facingMode, deviceId = "") {
+      stopCameraStream();
+      const videoConstraint = deviceId
+        ? { deviceId: { exact: deviceId } }
+        : { facingMode: { exact: facingMode } };
+
+      let stream = null;
+      try {
+        stream = await navigator.mediaDevices.getUserMedia({ video: videoConstraint, audio: false });
+      } catch {
+        stream = await navigator.mediaDevices.getUserMedia({
+          video: { facingMode: { ideal: facingMode } },
+          audio: false,
+        });
+      }
+      cameraStream = stream;
+      els.cameraPreview.srcObject = stream;
+      try { await els.cameraPreview.play(); } catch {}
+    }
+
+    async function openCameraOverlay(mode = "chat") {
+      if (!navigator.mediaDevices || typeof navigator.mediaDevices.getUserMedia !== "function") {
+        const err = new Error("camera_not_supported");
+        err.code = "camera_not_supported";
+        throw err;
+      }
+
+      if (!window.isSecureContext) {
+        const err = new Error("camera_insecure_context");
+        err.code = "camera_insecure_context";
+        throw err;
+      }
+
+      cameraCaptureMode = mode;
+      cameraFacingMode = "environment";
+      cameraDeviceIds = [];
+      cameraDeviceIndex = 0;
+      try {
+        const devices = await navigator.mediaDevices.enumerateDevices();
+        cameraDeviceIds = devices.filter((d) => d.kind === "videoinput").map((d) => d.deviceId).filter(Boolean);
+      } catch {
+        cameraDeviceIds = [];
+      }
+
+      if (cameraDeviceIds.length > 0) {
+        await startCameraStream(cameraFacingMode, cameraDeviceIds[cameraDeviceIndex]);
+      } else {
+        await startCameraStream(cameraFacingMode);
+      }
+
+      const hasMultipleCameras = cameraDeviceIds.length > 1;
+      els.cameraFlipBtn.classList.toggle("hidden", !hasMultipleCameras);
+
+      els.cameraOverlay.classList.remove("hidden");
+      els.cameraOverlay.setAttribute("aria-hidden", "false");
+    }
+
+    async function captureAndSendFromCamera() {
+      if (!currentUser) {
+        closeCameraOverlay();
+        return;
+      }
+      if (cameraCaptureMode === "chat" && !selectedFriend) {
+        closeCameraOverlay();
+        setChatNotice(t("selectFriendToChat"));
+        return;
+      }
+
+      const preview = els.cameraPreview;
+      const canvas = els.cameraCanvas;
+      if (!preview || !canvas) return;
+
+      const width = Number(preview.videoWidth || 0);
+      const height = Number(preview.videoHeight || 0);
+      if (!width || !height) {
+        const msg = t("cameraOpenFailed", { message: t("unknownError") });
+        setChatNotice(msg);
+        setFriendMsg(msg);
+        return;
+      }
+
+      canvas.width = width;
+      canvas.height = height;
+      const ctx = canvas.getContext("2d");
+      if (!ctx) {
+        const msg = t("cameraOpenFailed", { message: t("unknownError") });
+        setChatNotice(msg);
+        setFriendMsg(msg);
+        return;
+      }
+
+      ctx.drawImage(preview, 0, 0, width, height);
+      const mediaData = canvas.toDataURL("image/jpeg", 0.92);
+      closeCameraOverlay();
+      if (cameraCaptureMode === "avatar") {
+        await updateAvatar(mediaData);
+        setFriendMsg(t("avatarUpdated"), true);
+        return;
+      }
+      await sendRichMessage({ content: "", messageType: "image", mediaData });
+    }
+
+    function getToastElement() {
+      let toast = document.getElementById("notifyToast");
+      if (toast) return toast;
+
+      toast = document.createElement("div");
+      toast.id = "notifyToast";
+      toast.className = "notify-toast";
+      toast.innerHTML = '<div class="notify-toast-title"></div><div class="notify-toast-body"></div>';
+      document.body.appendChild(toast);
+      return toast;
+    }
+
+    function showInAppNotification(title, body) {
+      const toast = getToastElement();
+      const titleEl = toast.querySelector(".notify-toast-title");
+      const bodyEl = toast.querySelector(".notify-toast-body");
+      if (!titleEl || !bodyEl) return;
+
+      titleEl.textContent = title;
+      bodyEl.textContent = body;
+      toast.classList.add("show");
+
+      if (activeToastTimer) {
+        clearTimeout(activeToastTimer);
+      }
+      activeToastTimer = setTimeout(() => {
+        toast.classList.remove("show");
+      }, 3500);
+    }
+
+    function getNotificationAudioContext() {
+      if (notificationAudioContext) return notificationAudioContext;
+      const AudioContextCtor = globalThis.AudioContext || globalThis.webkitAudioContext;
+      if (!AudioContextCtor) return null;
+
+      try {
+        notificationAudioContext = new AudioContextCtor();
+      } catch {
+        notificationAudioContext = null;
+      }
+      return notificationAudioContext;
+    }
+
+    async function unlockNotificationSound() {
+      const ctx = getNotificationAudioContext();
+      if (!ctx) return;
+
+      try {
+        if (ctx.state === "suspended") {
+          await ctx.resume();
+        }
+        notificationAudioUnlocked = ctx.state === "running";
+      } catch {}
+    }
+
+    async function playNotificationSound() {
+      const ctx = getNotificationAudioContext();
+      if (!ctx) return;
+
+      try {
+        if (ctx.state !== "running") {
+          await ctx.resume();
+        }
+        if (ctx.state !== "running") return;
+
+        const now = ctx.currentTime;
+        const oscillator = ctx.createOscillator();
+        const gain = ctx.createGain();
+
+        oscillator.type = "sine";
+        oscillator.frequency.setValueAtTime(880, now);
+        gain.gain.setValueAtTime(0.0001, now);
+        gain.gain.exponentialRampToValueAtTime(0.08, now + 0.01);
+        gain.gain.exponentialRampToValueAtTime(0.0001, now + 0.18);
+
+        oscillator.connect(gain);
+        gain.connect(ctx.destination);
+        oscillator.start(now);
+        oscillator.stop(now + 0.2);
+        notificationAudioUnlocked = true;
+      } catch {}
+    }
+
+    async function requestNotificationPermission() {
+      if (globalThis.AndroidNotificationBridge && typeof globalThis.AndroidNotificationBridge.requestPermission === "function") {
+        try { globalThis.AndroidNotificationBridge.requestPermission(); } catch {}
+      }
+
+      if (!("Notification" in globalThis)) return;
+      if (Notification.permission !== "default") return;
+
+      try {
+        const result = await Notification.requestPermission();
+        if (result !== "granted") {
+          setFriendMsg(t("notificationPermissionDenied"));
+        }
+      } catch {}
+    }
+
+    function notifyAndroidSystem(title, body, friendId) {
+      if (!globalThis.AndroidNotificationBridge || typeof globalThis.AndroidNotificationBridge.showMessageNotification !== "function") {
+        return;
+      }
+      try {
+        globalThis.AndroidNotificationBridge.showMessageNotification(String(title || ""), String(body || ""), String(friendId || "0"));
+      } catch {}
+    }
+
+    function notifySystem(title, body, friendId) {
+      notifyAndroidSystem(title, body, friendId);
+
+      if (!("Notification" in globalThis)) return;
+      if (Notification.permission !== "granted") return;
+
+      try {
+        const n = new Notification(title, {
+          body,
+          tag: `friend-${friendId}`,
+          renotify: true,
+        });
+        n.onclick = () => {
+          try { globalThis.focus(); } catch {}
+          n.close();
+        };
+      } catch {}
+    }
+
+    function notifyUnreadChanges(rows) {
+      const list = rows || [];
+      const totalUnread = list.reduce((sum, friend) => sum + Number(friend.unread_count || 0), 0);
+
+      const getMessageTimeValue = (friend) => {
+        const d = parseDbTime(friend.last_message_at);
+        return d ? d.getTime() : 0;
+      };
+
+      if (!unreadSnapshotReady) {
+        unreadSnapshotByFriend.clear();
+        lastNotifiedMessageAtByFriend.clear();
+        list.forEach((friend) => {
+          unreadSnapshotByFriend.set(Number(friend.id), Number(friend.unread_count || 0));
+          lastNotifiedMessageAtByFriend.set(Number(friend.id), getMessageTimeValue(friend));
+        });
+        lastTotalUnreadCount = totalUnread;
+        unreadSnapshotReady = true;
+        return;
+      }
+
+      const existingIds = new Set();
+      let triggered = false;
+      list.forEach((friend) => {
+        const friendId = Number(friend.id);
+        existingIds.add(friendId);
+
+        const previous = Number(unreadSnapshotByFriend.get(friendId) || 0);
+        const current = Number(friend.unread_count || 0);
+        unreadSnapshotByFriend.set(friendId, current);
+
+        const previousMessageTime = Number(lastNotifiedMessageAtByFriend.get(friendId) || 0);
+        const currentMessageTime = getMessageTimeValue(friend);
+        if (currentMessageTime > 0) {
+          lastNotifiedMessageAtByFriend.set(friendId, currentMessageTime);
+        }
+
+        if (current <= 0) return;
+        if (current <= previous && currentMessageTime <= previousMessageTime) return;
+        const isActiveSameChat = !!(
+          selectedFriend
+          && Number(selectedFriend.id) === friendId
+          && document.visibilityState === "visible"
+        );
+        if (isActiveSameChat) return;
+
+        const delta = Math.max(1, current - previous);
+        const friendName = friend.display_name || friend.username || t("userDefaultName");
+        const title = t("newMessageAlert");
+        const body = t("newMessageFrom", { name: friendName, count: delta });
+        showInAppNotification(title, body);
+        notifySystem(title, body, friendId);
+        playNotificationSound().catch(() => {});
+        triggered = true;
+      });
+
+      if (!triggered && totalUnread > lastTotalUnreadCount) {
+        const fallbackFriend = list.find((friend) => Number(friend.unread_count || 0) > 0);
+        if (fallbackFriend) {
+          const friendId = Number(fallbackFriend.id);
+          const isActiveSameChat = !!(
+            selectedFriend
+            && Number(selectedFriend.id) === friendId
+            && document.visibilityState === "visible"
+          );
+          if (!isActiveSameChat) {
+            const title = t("newMessageAlert");
+            const body = t("newMessageFrom", {
+              name: fallbackFriend.display_name || fallbackFriend.username || t("userDefaultName"),
+              count: 1,
+            });
+            showInAppNotification(title, body);
+            notifySystem(title, body, friendId);
+            playNotificationSound().catch(() => {});
+          }
+        }
+      }
+
+      lastTotalUnreadCount = totalUnread;
+
+      Array.from(unreadSnapshotByFriend.keys()).forEach((friendId) => {
+        if (!existingIds.has(friendId)) {
+          unreadSnapshotByFriend.delete(friendId);
+          lastNotifiedMessageAtByFriend.delete(friendId);
+        }
+      });
+    }
+
+    function setAuthMode(mode) {
+      authMode = mode === "register" ? "register" : "login";
+      const login = authMode === "login";
+      els.loginForm.classList.toggle("hidden", !login);
+      els.registerForm.classList.toggle("hidden", login);
+      els.tabLogin.classList.toggle("active", login);
+      els.tabRegister.classList.toggle("active", !login);
+      setAuthMsg("");
+      showAuthOfflinePromptIfNeeded();
+    }
+
+    function isAuthScreenVisible() {
+      return !els.authSection.classList.contains("hidden");
+    }
+
+    function showAuthOfflinePromptIfNeeded() {
+      if (!isAuthScreenVisible()) return;
+      if (!navigator.onLine) {
+        showNetworkErrorModal();
+        return;
+      }
+      hideNetworkErrorModal();
+    }
+
+    function syncAndroidLoginState() {
+      if (!globalThis.AndroidAppStateBridge || typeof globalThis.AndroidAppStateBridge.setLoggedIn !== "function") {
+        return;
+      }
+      try {
+        globalThis.AndroidAppStateBridge.setLoggedIn(!!currentUser);
+      } catch {}
+    }
+
+    function updateView() {
+      const logged = !!currentUser;
+      els.authSection.classList.toggle("hidden", logged);
+      els.mainSection.classList.toggle("hidden", !logged);
+      els.userBox.classList.toggle("hidden", !logged);
+      if (logged) {
+        els.currentUserText.textContent = `${currentUser.display_name} (@${currentUser.username})`;
+      } else {
+        showAuthOfflinePromptIfNeeded();
+      }
+      syncAndroidLoginState();
+    }
+
+    function saveSessionToStorage() {
+      if (!sessionId || !currentUser) return;
+      localStorage.setItem(SESSION_STORAGE_KEY, JSON.stringify({
+        sessionId,
+        userId: Number(currentUser.id),
+      }));
+    }
+
+    function loadSessionFromStorage() {
+      try {
+        const raw = localStorage.getItem(SESSION_STORAGE_KEY);
+        if (!raw) return null;
+        const parsed = JSON.parse(raw);
+        if (!parsed || !parsed.sessionId || !parsed.userId) return null;
+        return parsed;
+      } catch {
+        return null;
+      }
+    }
+
+    function clearSessionFromStorage() {
+      localStorage.removeItem(SESSION_STORAGE_KEY);
+    }
+
+    function saveAuthCache(username, password) {
+      if (!username || !password) return;
+      localStorage.setItem(AUTH_CACHE_STORAGE_KEY, JSON.stringify({ username, password }));
+    }
+
+    function loadAuthCache() {
+      try {
+        const raw = localStorage.getItem(AUTH_CACHE_STORAGE_KEY);
+        if (!raw) return null;
+        const parsed = JSON.parse(raw);
+        if (!parsed || !parsed.username || !parsed.password) return null;
+        return parsed;
+      } catch {
+        return null;
+      }
+    }
+
+    function clearAuthCache() {
+      localStorage.removeItem(AUTH_CACHE_STORAGE_KEY);
+    }
+
+    function saveUserCache(user) {
+      if (!user) return;
+      localStorage.setItem(USER_CACHE_STORAGE_KEY, JSON.stringify({
+        id: Number(user.id),
+        username: String(user.username || ""),
+        display_name: String(user.display_name || ""),
+        avatar_data: String(normalizeAvatarData(user.avatar_data) || ""),
+      }));
+    }
+
+    function loadUserCache() {
+      try {
+        const raw = localStorage.getItem(USER_CACHE_STORAGE_KEY);
+        if (!raw) return null;
+        const parsed = JSON.parse(raw);
+        if (!parsed || !parsed.id || !parsed.username) return null;
+        parsed.avatar_data = normalizeAvatarData(parsed.avatar_data);
+        return parsed;
+      } catch {
+        return null;
+      }
+    }
+
+    function clearUserCache() {
+      localStorage.removeItem(USER_CACHE_STORAGE_KEY);
+    }
+
+    function isMissingAvatarColumnError(error) {
+      const msg = String(error?.message || "").toLowerCase();
+      const details = String(error?.details || "").toLowerCase();
+      return msg.includes("avatar_data") || details.includes("avatar_data") || msg.includes("column") && msg.includes("avatar");
+    }
+
+    async function updateAvatar(avatarData) {
+      if (!currentUser) return;
+
+      const normalized = normalizeAvatarData(avatarData);
+      let dbError = null;
+      try {
+        const { error } = await supabase
+          .from("users")
+          .update({ avatar_data: normalized || null })
+          .eq("id", currentUser.id);
+        dbError = error || null;
+      } catch (error) {
+        dbError = error;
+      }
+
+      if (dbError) {
+        if (isMissingAvatarColumnError(dbError)) {
+          throw new Error(t("avatarColumnMissing"));
+        }
+        throw dbError;
+      }
+
+      currentUser.avatar_data = normalized;
+      saveAvatarCache(currentUser.id, normalized);
+      saveUserCache(currentUser);
+      updateAccountAvatarPreview();
+      lastFriendsRenderKey = "";
+      await refreshAll();
+    }
+
+    function setAutoLoginHint(key = "") {
+      autoLoginHintKey = key || "";
+      if (els.autoLoginHint) {
+        els.autoLoginHint.textContent = autoLoginHintKey ? t(autoLoginHintKey) : "";
+      }
+    }
+
+    function createSessionToken() {
+      return (globalThis.crypto && globalThis.crypto.randomUUID)
+        ? globalThis.crypto.randomUUID()
+        : `${Date.now()}-${Math.random().toString(36).slice(2)}`;
+    }
+
+    async function finishLogin(user, authCache = null, hintKey = "autoLoginEnabled") {
+      sessionId = createSessionToken();
+      currentUser = user;
+      currentUser.avatar_data = normalizeAvatarData(currentUser.avatar_data) || loadAvatarCache(currentUser.id);
+      saveSessionToStorage();
+      saveUserCache(user);
+      saveAvatarCache(currentUser.id, currentUser.avatar_data);
+      if (authCache?.username && authCache?.password) {
+        saveAuthCache(authCache.username, authCache.password);
+      }
+      selectedFriend = null;
+      activeUtilityPanel = null;
+      els.loginForm.reset();
+      setAuthMsg("");
+      setFriendMsg("");
+      setAutoLoginHint(hintKey);
+      setUtilityPanel(null);
+      setRequestTab("incoming");
+      updateView();
+      updateAccountAvatarPreview();
+      clearSelectedFriend();
+      showFriendsView();
+
+      const cached = loadCachedFriends(currentUser.id);
+      if (cached.length) {
+        renderFriends(cached);
+      }
+
+      try {
+        await createFriendshipPair(currentUser.id, currentUser.id);
+        await startLoginSession();
+        await updatePresence();
+      } catch {}
+
+      requestNotificationPermission().catch(() => {});
+      startPolling();
+      try {
+        await refreshAll();
+        if (!bootstrapInProgress) {
+          showRefreshCompleteToast();
+        }
+      } catch (error) {
+        if (isNetworkError(error)) {
+          showNetworkErrorModal();
+        } else {
+          setFriendMsg(t("refreshFailed", { message: error.message || t("unknownError") }));
+        }
+      }
+    }
+
+    function showFriendsView() {
+      els.friendsPane.classList.remove("hidden");
+      els.chatPane.classList.add("hidden");
+    }
+
+    function showChatView() {
+      els.friendsPane.classList.add("hidden");
+      els.chatPane.classList.remove("hidden");
+    }
+
+    function clearSelectedFriend() {
+      selectedFriend = null;
+      selectedFriendGuardUntil = 0;
+      lastActiveChatSyncAt = 0;
+      currentConversationRows = [];
+      currentConversationFriendId = null;
+      isConversationLoading = false;
+      lastMessagesRenderKey = "";
+      els.chatTitle.textContent = t("noFriendSelected");
+      renderChatStatus(null);
+      els.chatInput.value = "";
+      els.chatInput.disabled = true;
+      els.sendBtn.disabled = true;
+      els.emojiToggleBtn.disabled = true;
+      closeEmojiPicker();
+      updateVoiceRecordButton();
+      els.pickImageBtn.disabled = true;
+      els.takePhotoBtn.disabled = true;
+      els.sendLocationBtn.disabled = true;
+      els.sendDocBtn.disabled = true;
+      renderMessages([]);
+    }
+
+    function setChatNotice(text) {
+      if (!selectedFriend) {
+        els.chatSub.textContent = t("selectChat");
+        return;
+      }
+      els.chatSub.textContent = text;
+    }
+
+    function canComposeMessage() {
+      return !!(currentUser && selectedFriend && !els.chatInput.disabled && !els.sendBtn.disabled);
+    }
+
+    function isAndroidAppRuntime() {
+      return !!(globalThis.AndroidNotificationBridge || globalThis.AndroidVoiceBridge);
+    }
+
+    function readFileAsDataURL(file) {
+      return new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onload = () => resolve(String(reader.result || ""));
+        reader.onerror = () => reject(new Error("read_failed"));
+        reader.readAsDataURL(file);
+      });
+    }
+
+    function isValidCoordinate(value, min, max) {
+      return Number.isFinite(value) && value >= min && value <= max;
+    }
+
+    function normalizePosition(position) {
+      const latitude = Number(position?.coords?.latitude);
+      const longitude = Number(position?.coords?.longitude);
+      const accuracy = Number(position?.coords?.accuracy || Number.POSITIVE_INFINITY);
+
+      if (!isValidCoordinate(latitude, -90, 90) || !isValidCoordinate(longitude, -180, 180)) {
+        throw new Error("browser_location_invalid");
+      }
+
+      return { latitude, longitude, accuracy };
+    }
+
+    function requestCurrentPosition(options) {
+      return new Promise((resolve, reject) => {
+        navigator.geolocation.getCurrentPosition(resolve, reject, options);
+      });
+    }
+
+    async function requestPrecisePosition(maxWaitMs = 35000, desiredAccuracyM = 120) {
+      if (!("geolocation" in navigator)) {
+        const err = new Error("geolocation_not_supported");
+        err.code = 2;
+        throw err;
+      }
+      if (!window.isSecureContext) {
+        const err = new Error("geolocation_insecure_context");
+        err.code = 2;
+        throw err;
+      }
+
+      const deadline = Date.now() + maxWaitMs;
+      const attempts = [
+        // Fast warm-up, allows small cache to reduce desktop cold start failures.
+        { enableHighAccuracy: true, timeout: 8000, maximumAge: 5000 },
+        // Second strict attempt for a fresher and usually more accurate fix.
+        { enableHighAccuracy: true, timeout: 12000, maximumAge: 0 },
+      ];
+
+      let best = null;
+      let lastError = null;
+
+      for (const options of attempts) {
+        const remain = deadline - Date.now();
+        if (remain <= 0) break;
+
+        try {
+          const position = await requestCurrentPosition({
+            ...options,
+            timeout: Math.min(options.timeout, remain),
+          });
+          const normalized = normalizePosition(position);
+          if (!best || normalized.accuracy < best.accuracy) {
+            best = normalized;
+          }
+          if (normalized.accuracy <= desiredAccuracyM) {
+            return normalized;
+          }
+        } catch (error) {
+          lastError = error;
+          if (error?.code === 1) throw error;
+        }
+      }
+
+      if (best) {
+        return best;
+      }
+
+      if (lastError && (lastError.code === 2 || lastError.code === 3)) {
+        throw lastError;
+      }
+
+      const timeoutErr = new Error("geolocation_timeout");
+      timeoutErr.code = 3;
+      throw timeoutErr;
+    }
+
+    async function resolveLocationForMessage() {
+      const precise = await Promise.race([
+        requestPrecisePosition(35000, 120),
+        new Promise((_, reject) => {
+          const err = new Error("location_total_timeout");
+          err.code = 3;
+          setTimeout(() => reject(err), LOCATION_REQUEST_TOTAL_TIMEOUT_MS);
+        }),
+      ]);
+      return { latitude: precise.latitude, longitude: precise.longitude, source: "gps" };
+    }
+
+    function supportsVoiceRecording() {
+      if (globalThis.AndroidVoiceBridge && typeof globalThis.AndroidVoiceBridge.startVoiceRecording === "function") {
+        return true;
+      }
+      return !!(
+        navigator.mediaDevices
+        && typeof navigator.mediaDevices.getUserMedia === "function"
+        && typeof globalThis.MediaRecorder === "function"
+      );
+    }
+
+    function getPreferredVoiceMimeType() {
+      if (typeof globalThis.MediaRecorder !== "function" || typeof MediaRecorder.isTypeSupported !== "function") {
+        return "";
+      }
+
+      const mimeTypes = [
+        "audio/webm;codecs=opus",
+        "audio/webm",
+        "audio/mp4",
+        "audio/ogg;codecs=opus",
+      ];
+      return mimeTypes.find((value) => MediaRecorder.isTypeSupported(value)) || "";
+    }
+
+    function cleanupVoiceRecordingState() {
+      if (voiceRecordingStream) {
+        voiceRecordingStream.getTracks().forEach((track) => track.stop());
+      }
+      nativeVoiceRecording = false;
+      voiceMediaRecorder = null;
+      voiceRecordingStream = null;
+      voiceRecordingChunks = [];
+      voiceRecordingStartAt = 0;
+      voiceRecordingTargetFriendId = null;
+      voiceRecordingSendOnStop = false;
+      updateVoiceRecordButton();
+      renderChatStatus(selectedFriend);
+    }
+
+    function cancelVoiceRecording() {
+      voiceReadyBlob = null;
+      voiceReadyMediaData = "";
+      voiceReadyContent = "";
+      if (nativeVoiceRecording && globalThis.AndroidVoiceBridge && typeof globalThis.AndroidVoiceBridge.cancelVoiceRecording === "function") {
+        try {
+          globalThis.AndroidVoiceBridge.cancelVoiceRecording();
+        } catch {}
+        cleanupVoiceRecordingState();
+        return;
+      }
+      if (voiceMediaRecorder && voiceMediaRecorder.state !== "inactive") {
+        voiceRecordingSendOnStop = false;
+        try { voiceMediaRecorder.stop(); } catch { cleanupVoiceRecordingState(); }
+      } else {
+        cleanupVoiceRecordingState();
+      }
+    }
+
+    function updateVoiceRecordButton() {
+      if (!els.voiceRecordBtn) return;
+      const recording = nativeVoiceRecording || !!(voiceMediaRecorder && voiceMediaRecorder.state === "recording");
+      const ready = !recording && (!!voiceReadyBlob || !!voiceReadyMediaData);
+      els.voiceRecordBtn.classList.toggle("active", recording);
+      els.voiceRecordBtn.classList.toggle("ready", ready);
+      if (recording) {
+        els.voiceRecordBtn.textContent = t("stopRecording");
+        els.voiceRecordBtn.title = t("stopRecording");
+      } else if (ready) {
+        els.voiceRecordBtn.textContent = t("discardVoice");
+        els.voiceRecordBtn.title = t("discardVoice");
+      } else {
+        els.voiceRecordBtn.textContent = t("startRecording");
+        els.voiceRecordBtn.title = t("startRecording");
+      }
+      els.voiceRecordBtn.disabled = !recording && !ready && (!supportsVoiceRecording() || !canComposeMessage());
+    }
+
+    async function startVoiceRecording() {
+      if (!canComposeMessage()) {
+        setChatNotice(t("selectFriendToChat"));
+        return;
+      }
+      if (!supportsVoiceRecording()) {
+        setChatNotice(t("microphoneNotSupported"));
+        setFriendMsg(t("microphoneNotSupported"));
+        return;
+      }
+      if (voiceMediaRecorder && voiceMediaRecorder.state === "recording") {
+        return;
+      }
+
+      if (globalThis.AndroidVoiceBridge && typeof globalThis.AndroidVoiceBridge.startVoiceRecording === "function") {
+        voiceReadyBlob = null;
+        voiceReadyMediaData = "";
+        voiceReadyContent = "";
+        voiceRecordingTargetFriendId = Number(selectedFriend.id);
+        nativeVoiceRecording = true;
+        voiceRecordingStartAt = Date.now();
+        updateVoiceRecordButton();
+        setChatNotice(t("recordingVoice"));
+        try {
+          globalThis.AndroidVoiceBridge.startVoiceRecording();
+        } catch (error) {
+          cleanupVoiceRecordingState();
+          setChatNotice(t("microphonePermissionDenied", { message: error?.message || t("unknownError") }));
+          setFriendMsg(t("microphonePermissionDenied", { message: error?.message || t("unknownError") }));
+        }
+        return;
+      }
+
+      try {
+        const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+        if (!selectedFriend) {
+          stream.getTracks().forEach((track) => track.stop());
+          return;
+        }
+        const mimeType = getPreferredVoiceMimeType();
+        const recorder = mimeType ? new MediaRecorder(stream, { mimeType }) : new MediaRecorder(stream);
+
+        voiceRecordingStream = stream;
+        voiceMediaRecorder = recorder;
+        voiceRecordingChunks = [];
+        voiceRecordingStartAt = Date.now();
+        voiceRecordingTargetFriendId = Number(selectedFriend.id);
+        voiceRecordingSendOnStop = true;
+
+        recorder.addEventListener("dataavailable", (event) => {
+          if (event.data && event.data.size > 0) {
+            voiceRecordingChunks.push(event.data);
+          }
+        });
+
+        recorder.addEventListener("stop", () => {
+          const durationMs = Math.max(0, Date.now() - voiceRecordingStartAt);
+          const shouldBuffer = voiceRecordingSendOnStop;
+          const chunks = [...voiceRecordingChunks];
+          const finalMimeType = recorder.mimeType || mimeType || "audio/webm";
+          cleanupVoiceRecordingState();
+
+          if (!shouldBuffer) return;
+          if (durationMs < 500 || !chunks.length) {
+            setChatNotice(t("voiceTooShort"));
+            setFriendMsg(t("voiceTooShort"));
+            return;
+          }
+
+          const blob = new Blob(chunks, { type: finalMimeType });
+          const seconds = Math.max(1, Math.round(durationMs / 1000));
+          voiceReadyBlob = blob;
+          voiceReadyContent = t("voiceMessageDuration", { seconds });
+          updateVoiceRecordButton();
+          setChatNotice(t("voiceReadyToSend"));
+        }, { once: true });
+
+        recorder.start();
+        updateVoiceRecordButton();
+        setChatNotice(t("recordingVoice"));
+      } catch (error) {
+        cleanupVoiceRecordingState();
+        setChatNotice(t("microphonePermissionDenied", { message: error?.message || t("unknownError") }));
+        setFriendMsg(t("microphonePermissionDenied", { message: error?.message || t("unknownError") }));
+      }
+    }
+
+    async function stopVoiceRecording() {
+      if (nativeVoiceRecording && globalThis.AndroidVoiceBridge && typeof globalThis.AndroidVoiceBridge.stopVoiceRecording === "function") {
+        try {
+          globalThis.AndroidVoiceBridge.stopVoiceRecording();
+        } catch {
+          cleanupVoiceRecordingState();
+        }
+        return;
+      }
+
+      if (!voiceMediaRecorder) return;
+
+      voiceRecordingSendOnStop = true;
+      const recorder = voiceMediaRecorder;
+      if (recorder.state === "inactive") {
+        cleanupVoiceRecordingState();
+        return;
+      }
+
+      try {
+        recorder.stop();
+      } catch {
+        cleanupVoiceRecordingState();
+      }
+    }
+
+    async function sendRichMessage(payload) {
+      if (!canComposeMessage()) {
+        setChatNotice(t("selectFriendToChat"));
+        return;
+      }
+
+      const targetFriendId = Number(selectedFriend.id);
+      const pendingId = addPendingMessage(targetFriendId, payload);
+      if (currentConversationFriendId !== targetFriendId) {
+        currentConversationFriendId = targetFriendId;
+        currentConversationRows = [];
+      }
+      renderMessages(currentConversationRows);
+
+      try {
+        await sendMessage(targetFriendId, payload);
+        stopTypingIndicatorNow();
+        removePendingMessage(targetFriendId, pendingId);
+        const rows = await fetchMessages(targetFriendId);
+        updateConversationState(targetFriendId, rows);
+        renderMessages(rows);
+        renderChatStatus(selectedFriend);
+      } catch (error) {
+        removePendingMessage(targetFriendId, pendingId);
+        renderMessages(currentConversationRows);
+        setChatNotice(t("messageSendFailed", { message: error.message || t("unknownError") }));
+        setFriendMsg(t("messageSendFailed", { message: error.message || t("unknownError") }));
+      }
+    }
+
+    globalThis.__androidVoiceRecordingStarted = () => {
+      nativeVoiceRecording = true;
+      voiceRecordingStartAt = Date.now();
+      voiceRecordingSendOnStop = true;
+      updateVoiceRecordButton();
+      setChatNotice(t("recordingVoice"));
+    };
+
+    globalThis.__androidVoiceRecordingReady = (payload = {}) => {
+      nativeVoiceRecording = false;
+      voiceMediaRecorder = null;
+      voiceRecordingStream = null;
+      voiceRecordingChunks = [];
+      voiceRecordingStartAt = 0;
+      voiceRecordingTargetFriendId = null;
+      voiceRecordingSendOnStop = false;
+
+      if (!payload.mediaData) {
+        cleanupVoiceRecordingState();
+        setFriendMsg(t("voiceReadFailed", { message: t("unknownError") }));
+        return;
+      }
+
+      voiceReadyBlob = null;
+      voiceReadyMediaData = String(payload.mediaData || "");
+      voiceReadyContent = t("voiceMessageDuration", { seconds: Math.max(1, Number(payload.seconds || 1)) });
+      updateVoiceRecordButton();
+      renderChatStatus(selectedFriend);
+      setChatNotice(t("voiceReadyToSend"));
+    };
+
+    globalThis.__androidVoiceRecordingError = (message = "") => {
+      cleanupVoiceRecordingState();
+      setFriendMsg(t("microphonePermissionDenied", { message: message || t("unknownError") }));
+    };
+
+    function getPendingMessages(friendId) {
+      return pendingMessagesByFriend.get(Number(friendId)) || [];
+    }
+
+    function addPendingMessage(friendId, payload) {
+      const data = (typeof payload === "string")
+        ? { content: payload, messageType: "text", mediaData: null, latitude: null, longitude: null }
+        : {
+            content: payload?.content || "",
+            messageType: payload?.messageType || "text",
+            mediaData: payload?.mediaData || null,
+            latitude: payload?.latitude ?? null,
+            longitude: payload?.longitude ?? null,
+          };
+      const key = Number(friendId);
+      const pending = getPendingMessages(key);
+      const tempId = `temp-${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
+      pending.push({
+        id: tempId,
+        sender_id: currentUser.id,
+        receiver_id: key,
+        content: data.content,
+        message_type: data.messageType,
+        media_data: data.mediaData,
+        latitude: data.latitude,
+        longitude: data.longitude,
+        created_at: new Date().toISOString(),
+        _pending: true,
+      });
+      pendingMessagesByFriend.set(key, pending);
+      return tempId;
+    }
+
+    function removePendingMessage(friendId, tempId) {
+      const key = Number(friendId);
+      const pending = getPendingMessages(key).filter((m) => String(m.id) !== String(tempId));
+      if (pending.length) {
+        pendingMessagesByFriend.set(key, pending);
+      } else {
+        pendingMessagesByFriend.delete(key);
+      }
+    }
+
+    function clearTypingTimers() {
+      if (typingSendTimer) {
+        clearTimeout(typingSendTimer);
+        typingSendTimer = null;
+      }
+      if (typingClearTimer) {
+        clearTimeout(typingClearTimer);
+        typingClearTimer = null;
+      }
+    }
+
+    function stopTypingIndicatorNow() {
+      clearTypingTimers();
+      typingTargetFriendId = null;
+      clearTyping().catch(() => {});
+    }
+
+    function scheduleTypingUpdate(friendId) {
+      if (!currentUser || !selectedFriend) return;
+      const targetId = Number(friendId);
+      typingTargetFriendId = targetId;
+
+      const pushTyping = () => {
+        if (!currentUser || !selectedFriend) return;
+        if (Number(selectedFriend.id) !== targetId) return;
+        setTyping(targetId)
+          .then(() => {
+            lastTypingSentAt = Date.now();
+          })
+          .catch((error) => {
+            setFriendMsg(t("typingUpdateFailed", { message: error.message || t("unknownError") }));
+          });
+      };
+
+      const now = Date.now();
+      const elapsed = now - lastTypingSentAt;
+      if (elapsed >= TYPING_SEND_MIN_INTERVAL_MS) {
+        pushTyping();
+      } else {
+        if (typingSendTimer) {
+          clearTimeout(typingSendTimer);
+        }
+        typingSendTimer = setTimeout(() => {
+          typingSendTimer = null;
+          pushTyping();
+        }, TYPING_SEND_MIN_INTERVAL_MS - elapsed);
+      }
+
+      if (typingClearTimer) {
+        clearTimeout(typingClearTimer);
+      }
+      typingClearTimer = setTimeout(() => {
+        if (typingTargetFriendId !== targetId) return;
+        stopTypingIndicatorNow();
+      }, TYPING_IDLE_CLEAR_MS);
+    }
+
+    function setUtilityPanel(panelName) {
+      activeUtilityPanel = activeUtilityPanel === panelName ? null : panelName;
+      const showChats = activeUtilityPanel === null;
+      const showAdd = activeUtilityPanel === "add";
+      const showRequests = activeUtilityPanel === "requests";
+      const showAccount = activeUtilityPanel === "account";
+
+      els.addFriendPanel.classList.toggle("hidden", !showAdd);
+      els.requestPanel.classList.toggle("hidden", !showRequests);
+      els.accountPanel.classList.toggle("hidden", !showAccount);
+      els.toggleChatsBtn.classList.toggle("active", showChats);
+      els.toggleAddFriendBtn.classList.toggle("active", showAdd);
+      els.toggleRequestsBtn.classList.toggle("active", showRequests);
+      els.toggleAccountBtn.classList.toggle("active", showAccount);
+    }
+
+    function setRequestTab(tab) {
+      requestTab = tab === "outgoing" ? "outgoing" : "incoming";
+      const showIncoming = requestTab === "incoming";
+
+      els.incomingPanel.classList.toggle("hidden", !showIncoming);
+      els.outgoingPanel.classList.toggle("hidden", showIncoming);
+      els.incomingTabBtn.classList.toggle("active", showIncoming);
+      els.outgoingTabBtn.classList.toggle("active", !showIncoming);
+    }
+
+    function updateRequestBadge(count) {
+      const safeCount = Number(count || 0);
+      els.requestBadge.textContent = safeCount > 99 ? "99+" : String(safeCount);
+      els.requestBadge.classList.toggle("hidden", safeCount <= 0);
+    }
+
+    function getFriendCacheKey(userId) {
+      return `${FRIEND_CACHE_PREFIX}${userId}`;
+    }
+
+    function loadCachedFriends(userId) {
+      try {
+        const raw = localStorage.getItem(getFriendCacheKey(userId));
+        if (!raw) return [];
+        const parsed = JSON.parse(raw);
+        return Array.isArray(parsed) ? parsed : [];
+      } catch {
+        return [];
+      }
+    }
+
+    function saveCachedFriends(userId, rows) {
+      if (!userId) return;
+      try {
+        localStorage.setItem(getFriendCacheKey(userId), JSON.stringify(rows || []));
+      } catch {}
+    }
+
+    function applyActiveChatReadState(rows) {
+      if (!selectedFriend) return rows || [];
+      const activeFriendId = Number(selectedFriend.id);
+      return (rows || []).map((friend) => (
+        Number(friend.id) === activeFriendId
+          ? { ...friend, unread_count: 0 }
+          : friend
+      ));
+    }
+
+    function patchFriendLocal(friendId, patch) {
+      latestFriends = latestFriends.map((item) => (
+        Number(item.id) === Number(friendId)
+          ? { ...item, ...patch }
+          : item
+      ));
+      if (selectedFriend && Number(selectedFriend.id) === Number(friendId)) {
+        selectedFriend = { ...selectedFriend, ...patch };
+      }
+      lastFriendsRenderKey = "";
+      renderFriends(latestFriends);
+      if (selectedFriend && Number(selectedFriend.id) === Number(friendId)) {
+        renderChatStatus(selectedFriend);
+      }
+    }
+
+    function updateConversationState(friendId, rows) {
+      const normalizedRows = Array.isArray(rows) ? rows : [];
+      conversationCacheByFriend.set(Number(friendId), normalizedRows);
+      currentConversationFriendId = Number(friendId);
+      currentConversationRows = normalizedRows;
+    }
+
+    function formatTime(v) {
+      const d = parseDbTime(v);
+      if (!d) return "-";
+      return d.toLocaleString(currentLocale(), { hour12: false, timeZone: APP_TIME_ZONE });
+    }
+
+    function formatChatListTime(v) {
+      const d = parseDbTime(v);
+      if (!d) return "";
+
+      const now = new Date();
+      const dayDiff = getShanghaiDayNumber(now) - getShanghaiDayNumber(d);
+      if (dayDiff === 0) {
+        return d.toLocaleTimeString(currentLocale(), {
+          hour: "2-digit",
+          minute: "2-digit",
+          hour12: false,
+          timeZone: APP_TIME_ZONE,
+        });
+      }
+      if (dayDiff === 1) return currentLanguage === "en" ? "1d" : "1天";
+      if (dayDiff < 7) return currentLanguage === "en" ? `${dayDiff}d` : `${dayDiff}天`;
+      return d.toLocaleDateString(currentLocale(), {
+        month: "2-digit",
+        day: "2-digit",
+        timeZone: APP_TIME_ZONE,
+      });
+    }
+
+    function formatLastSeen(v) {
+      if (!v) return t("noOnlineRecord");
+
+      const d = parseDbTime(v);
+      if (!d) return t("noOnlineRecord");
+
+      const now = new Date();
+      const diffMs = now.getTime() - d.getTime();
+      if (diffMs < 0) return formatTime(d);
+
+      const diffSeconds = Math.floor(diffMs / 1000);
+      if (diffSeconds < 60) return t("justNow");
+
+      const diffMinutes = Math.floor(diffSeconds / 60);
+      if (diffMinutes < 60) return t("minutesAgo", { count: diffMinutes });
+
+      const dayDiff = getShanghaiDayNumber(now) - getShanghaiDayNumber(d);
+      const timeText = d.toLocaleTimeString(currentLocale(), {
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false,
+        timeZone: APP_TIME_ZONE,
+      });
+
+      if (dayDiff === 0) return t("todayTime", { time: timeText });
+      if (dayDiff === 1) return t("yesterdayTime", { time: timeText });
+      if (dayDiff < 7) return t("daysAgo", { count: dayDiff });
+
+      return d.toLocaleString(currentLocale(), {
+        month: "2-digit",
+        day: "2-digit",
+        hour: "2-digit",
+        minute: "2-digit",
+        hour12: false,
+        timeZone: APP_TIME_ZONE,
+      });
+    }
+
+    function escapeHtml(text) {
+      return String(text || "")
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/\"/g, "&quot;")
+        .replace(/'/g, "&#39;");
+    }
+
+    function getDefaultAvatarSrc() {
+      const icon = document.querySelector('link[rel="icon"]');
+      return icon?.href || "";
+    }
+
+    function normalizeAvatarData(value) {
+      const raw = String(value || "").trim();
+      if (!raw) return "";
+      if (raw.startsWith("data:image/")) return raw;
+      if (/^https?:\/\//i.test(raw)) return raw;
+      return "";
+    }
+
+    function avatarCacheKey(userId) {
+      return `${AVATAR_CACHE_PREFIX}${Number(userId || 0)}`;
+    }
+
+    function saveAvatarCache(userId, avatarData) {
+      if (!userId) return;
+      const normalized = normalizeAvatarData(avatarData);
+      const key = avatarCacheKey(userId);
+      if (!normalized) {
+        localStorage.removeItem(key);
+        return;
+      }
+      localStorage.setItem(key, normalized);
+    }
+
+    function loadAvatarCache(userId) {
+      if (!userId) return "";
+      return normalizeAvatarData(localStorage.getItem(avatarCacheKey(userId)) || "");
+    }
+
+    function resolveAvatarSrc(user) {
+      const fromUser = normalizeAvatarData(user?.avatar_data);
+      return fromUser || getDefaultAvatarSrc();
+    }
+
+    function updateAccountAvatarPreview() {
+      if (!els.accountAvatarPreview) return;
+      els.accountAvatarPreview.src = resolveAvatarSrc(currentUser);
+    }
+
+    function formatCoordinate(value) {
+      const num = Number(value);
+      if (!Number.isFinite(num)) return "";
+      return num.toFixed(6);
+    }
+
+    function normalizeImageSrc(rawValue) {
+      let raw = String(rawValue || "").trim();
+      if (!raw) return "";
+
+      // Handle values accidentally persisted with wrapping quotes.
+      if ((raw.startsWith('"') && raw.endsWith('"')) || (raw.startsWith("'") && raw.endsWith("'"))) {
+        raw = raw.slice(1, -1);
+      }
+
+      // Recover common escaped variants from previous rendering/serialization paths.
+      raw = raw
+        .replace(/&quot;/g, '"')
+        .replace(/\\\//g, "/")
+        .replace(/\s+/g, " ")
+        .trim();
+
+      if (/^data%3Aimage%2F/i.test(raw)) {
+        try {
+          raw = decodeURIComponent(raw);
+        } catch {}
+      }
+
+      if (raw.startsWith("data:image/")) {
+        return raw;
+      }
+      if (/^https?:\/\//i.test(raw)) {
+        return raw;
+      }
+
+      // Some payloads may include only the part after comma in a data URL.
+      if (/^[A-Za-z0-9+/=\r\n]+$/.test(raw)) {
+        return `data:image/jpeg;base64,${raw.replace(/\s+/g, "")}`;
+      }
+
+      // Fallback for plain base64 payloads persisted without data URL prefix.
+      return "";
+    }
+
+    function normalizeAudioSrc(rawValue) {
+      const raw = String(rawValue || "").trim();
+      if (!raw) return "";
+      if (raw.startsWith("data:audio/")) return raw;
+      if (/^https?:\/\//i.test(raw)) return raw;
+      return "";
+    }
+
+    function renderMessageBody(message) {
+      const type = message.message_type || "text";
+      if (type === "image") {
+        const src = normalizeImageSrc(message.media_data);
+        if (!src) {
+          return `<div>${t("imageMessage")} (${t("unknownError")})</div>`;
+        }
+        return `<img class="bubble-image" src="${src}" alt="${t("imageMessage")}" onerror="this.replaceWith(document.createTextNode('${t("imageMessage")}'))" />`;
+      }
+
+      if (type === "audio") {
+        const src = normalizeAudioSrc(message.media_data);
+        if (!src) {
+          return `<div>${escapeHtml(message.content || t("voiceMessage"))}</div>`;
+        }
+        return `
+          <audio class="bubble-audio" controls preload="metadata" src="${src}"></audio>
+          <div class="audio-caption">${escapeHtml(message.content || t("voiceMessage"))}</div>
+        `;
+      }
+
+      if (type === "file") {
+        const src = message.media_data || "";
+        const filename = escapeHtml(message.content || t("documentMessage"));
+        if (!src) return `<div>📎 ${filename}</div>`;
+        return `<div class="bubble-file"><span class="file-icon">📎</span><a class="file-link" href="${src}" download="${filename}">${filename}</a></div>`;
+      }
+
+      if (type === "location") {
+        const lat = Number(message.latitude);
+        const lng = Number(message.longitude);
+        if (!Number.isFinite(lat) || !Number.isFinite(lng)) {
+          return `<div>${escapeHtml(message.content || t("locationMessage"))}</div>`;
+        }
+        const mapUrl = `https://maps.google.com/?q=${lat},${lng}`;
+        const label = `${t("locationMessage")}: ${formatCoordinate(lat)}, ${formatCoordinate(lng)}`;
+        return `
+          <div>${escapeHtml(message.content || label)}</div>
+          <a class="location-link" href="${mapUrl}" target="_blank" rel="noopener noreferrer">${t("openMap")}</a>
+        `;
+      }
+
+      return `<div>${escapeHtml(message.content)}</div>`;
+    }
+
+    async function initDatabase() {
+      const { error } = await supabase.from("users").select("id", { head: true, count: "exact" }).limit(1);
+      if (error) {
+        throw new Error("Supabase schema not ready. Please run supabase_users_only_schema.sql (or full schema) first.");
+      }
+
+      const { error: avatarError } = await supabase.from("users").select("avatar_data").limit(1);
+      if (avatarError) {
+        if (isMissingAvatarColumnError(avatarError)) {
+          throw new Error("Users.avatar_data column missing. Run: alter table public.users add column if not exists avatar_data text;");
+        }
+        throw new Error(`Avatar schema check failed: ${avatarError.message || "Unknown error"}`);
+      }
+    }
+
+    function makeSessionExpiryIso() {
+      return new Date(Date.now() + SESSION_TTL_MS).toISOString();
+    }
+
+    async function registerUser(username, displayName, password) {
+      const now = nowIso();
+      const { data, error } = await supabase.from("users").insert({
+        username,
+        display_name: displayName,
+        password,
+        created_at: now,
+        last_seen_at: now,
+      }).select("id").single();
+      assertNoDbError(error, "Register failed");
+
+      const newUserId = Number(data?.id || 0);
+      if (newUserId) {
+        await createFriendshipPair(newUserId, newUserId);
+      }
+    }
+
+    async function loginUser(username, password) {
+      let user = null;
+      let error = null;
+      ({ data: user, error } = await supabase
+        .from("users")
+        .select("id, username, display_name, avatar_data")
+        .eq("username", username)
+        .eq("password", password)
+        .eq("is_active", true)
+        .maybeSingle());
+      if (error && isMissingAvatarColumnError(error)) {
+        ({ data: user, error } = await supabase
+          .from("users")
+          .select("id, username, display_name")
+          .eq("username", username)
+          .eq("password", password)
+          .eq("is_active", true)
+          .maybeSingle());
+      }
+      assertNoDbError(error, "Login failed");
+      if (!user) return null;
+
+      const nowIso = new Date().toISOString();
+      const { error: updateError } = await supabase
+        .from("users")
+        .update({ last_login_at: nowIso, last_seen_at: nowIso })
+        .eq("id", user.id);
+      assertNoDbError(updateError, "Login failed");
+      return user;
+    }
+
+    async function changePassword(currentPassword, newPassword) {
+      const { data, error } = await supabase
+        .from("users")
+        .update({ password: newPassword })
+        .eq("id", currentUser.id)
+        .eq("password", currentPassword)
+        .select("id");
+      assertNoDbError(error, "Password update failed");
+      return !!(data && data.length);
+    }
+
+    async function startLoginSession() {
+      if (!currentUser || !sessionId) return;
+      const nowIso = new Date().toISOString();
+
+      const { error: delError } = await supabase.from("user_sessions").delete().eq("user_id", currentUser.id);
+      assertNoDbError(delError, "Session init failed");
+
+      const { error: insError } = await supabase.from("user_sessions").insert({
+        session_id: sessionId,
+        user_id: currentUser.id,
+        login_at: nowIso,
+        logout_at: null,
+        expires_at: makeSessionExpiryIso(),
+        last_seen_at: nowIso,
+        created_at: nowIso,
+      });
+      assertNoDbError(insError, "Session init failed");
+
+      const { error: userError } = await supabase
+        .from("users")
+        .update({ last_login_at: nowIso, last_seen_at: nowIso })
+        .eq("id", currentUser.id);
+      assertNoDbError(userError, "Session init failed");
+      saveSessionToStorage();
+    }
+
+    async function updatePresence() {
+      if (!currentUser || !sessionId) return;
+      const nowIso = new Date().toISOString();
+
+      const { error: upsertError } = await supabase.from("user_sessions").upsert({
+        session_id: sessionId,
+        user_id: currentUser.id,
+        login_at: nowIso,
+        logout_at: null,
+        expires_at: makeSessionExpiryIso(),
+        last_seen_at: nowIso,
+        created_at: nowIso,
+      }, { onConflict: "session_id" });
+      assertNoDbError(upsertError, "Presence update failed");
+
+      const { error: userError } = await supabase.from("users").update({ last_seen_at: nowIso }).eq("id", currentUser.id);
+      assertNoDbError(userError, "Presence update failed");
+      saveSessionToStorage();
+    }
+
+    async function markOffline() {
+      if (!currentUser || !sessionId) return;
+      const nowIso = new Date().toISOString();
+      try {
+        await supabase
+          .from("user_sessions")
+          .update({ logout_at: nowIso, expires_at: nowIso, last_seen_at: nowIso })
+          .eq("session_id", sessionId);
+      } catch {}
+      try {
+        await supabase
+          .from("users")
+          .update({ last_seen_at: nowIso, typing_to_user_id: null, typing_at: null })
+          .eq("id", currentUser.id);
+      } catch {}
+    }
+
+    async function fetchUserBySession(savedSessionId, savedUserId) {
+      const { data: session, error: sessionError } = await supabase
+        .from("user_sessions")
+        .select("session_id, user_id, logout_at, expires_at")
+        .eq("session_id", savedSessionId)
+        .eq("user_id", savedUserId)
+        .maybeSingle();
+      assertNoDbError(sessionError, "Session restore failed");
+      if (!session || session.logout_at) return null;
+      if (new Date(session.expires_at).getTime() <= Date.now()) return null;
+
+      const { data: user, error: userError } = await supabase
+        .from("users")
+        .select("id, username, display_name, avatar_data")
+        .eq("id", savedUserId)
+        .eq("is_active", true)
+        .maybeSingle();
+      let restoredUser = user;
+      let restoredError = userError;
+      if (restoredError && isMissingAvatarColumnError(restoredError)) {
+        const fallback = await supabase
+          .from("users")
+          .select("id, username, display_name")
+          .eq("id", savedUserId)
+          .eq("is_active", true)
+          .maybeSingle();
+        restoredUser = fallback.data;
+        restoredError = fallback.error;
+      }
+      assertNoDbError(restoredError, "Session restore failed");
+      return restoredUser || null;
+    }
+
+    async function restoreLoginSession() {
+      const saved = loadSessionFromStorage();
+      if (!saved) return false;
+
+      const user = await fetchUserBySession(saved.sessionId, saved.userId);
+      if (!user) {
+        clearSessionFromStorage();
+        return false;
+      }
+
+      sessionId = saved.sessionId;
+      currentUser = user;
+      currentUser.avatar_data = normalizeAvatarData(currentUser.avatar_data) || loadAvatarCache(currentUser.id);
+      selectedFriend = null;
+      activeUtilityPanel = null;
+      setAuthMsg("");
+      setFriendMsg("");
+      setAutoLoginHint("autoLoginBySession");
+      setUtilityPanel(null);
+      setRequestTab("incoming");
+      updateView();
+      updateAccountAvatarPreview();
+      clearSelectedFriend();
+      showFriendsView();
+
+      const cached = loadCachedFriends(currentUser.id);
+      if (cached.length) {
+        renderFriends(cached);
+      }
+
+      createFriendshipPair(currentUser.id, currentUser.id).catch(() => {});
+      await updatePresence().catch(() => {});
+      requestNotificationPermission().catch(() => {});
+      startPolling();
+      refreshAll().catch((error) => {
+        setFriendMsg(t("refreshFailed", { message: error.message || t("unknownError") }));
+      });
+      return true;
+    }
+
+    async function restoreCachedLogin() {
+      const saved = loadAuthCache();
+      if (!saved) return false;
+
+      const user = await loginUser(saved.username, saved.password);
+      if (!user) {
+        clearAuthCache();
+        clearSessionFromStorage();
+        return false;
+      }
+
+      await finishLogin(user, saved, "autoLoginByCredentials");
+      return true;
+    }
+
+    async function restoreUserCacheLogin() {
+      const savedUser = loadUserCache();
+      if (!savedUser) return false;
+
+      currentUser = {
+        id: Number(savedUser.id),
+        username: String(savedUser.username || ""),
+        display_name: String(savedUser.display_name || ""),
+        avatar_data: normalizeAvatarData(savedUser.avatar_data) || loadAvatarCache(savedUser.id),
+      };
+      sessionId = createSessionToken();
+      saveSessionToStorage();
+      selectedFriend = null;
+      activeUtilityPanel = null;
+      setAuthMsg("");
+      setFriendMsg("");
+      setAutoLoginHint("autoLoginByUserCache");
+      setUtilityPanel(null);
+      setRequestTab("incoming");
+      updateView();
+      updateAccountAvatarPreview();
+      clearSelectedFriend();
+      showFriendsView();
+
+      const cached = loadCachedFriends(currentUser.id);
+      if (cached.length) {
+        renderFriends(cached);
+      }
+
+      createFriendshipPair(currentUser.id, currentUser.id).catch(() => {});
+      startPolling();
+      refreshAll().catch((error) => {
+        setFriendMsg(t("refreshFailed", { message: error.message || t("unknownError") }));
+      });
+
+      const authCache = loadAuthCache();
+      if (authCache?.username && authCache?.password) {
+        restoreCachedLogin().catch(() => {});
+      } else {
+        updatePresence().catch(() => {});
+      }
+      return true;
+    }
+
+    function restoreUserCacheInstant() {
+      const savedUser = loadUserCache();
+      if (!savedUser) return false;
+
+      currentUser = {
+        id: Number(savedUser.id),
+        username: String(savedUser.username || ""),
+        display_name: String(savedUser.display_name || ""),
+        avatar_data: normalizeAvatarData(savedUser.avatar_data) || loadAvatarCache(savedUser.id),
+      };
+      sessionId = createSessionToken();
+      saveSessionToStorage();
+      selectedFriend = null;
+      activeUtilityPanel = null;
+      setAuthMsg("");
+      setFriendMsg("");
+      setAutoLoginHint("autoLoginByUserCache");
+      setUtilityPanel(null);
+      setRequestTab("incoming");
+      updateView();
+      updateAccountAvatarPreview();
+      clearSelectedFriend();
+      showFriendsView();
+
+      const cached = loadCachedFriends(currentUser.id);
+      if (cached.length) {
+        renderFriends(cached);
+      }
+      createFriendshipPair(currentUser.id, currentUser.id).catch(() => {});
+      return true;
+    }
+
+    async function createFriendshipPair(a, b) {
+      const nowIso = new Date().toISOString();
+      const { error } = await supabase.from("friendships").upsert([
+        { user_id: a, friend_id: b, created_at: nowIso },
+        { user_id: b, friend_id: a, created_at: nowIso },
+      ], { onConflict: "user_id,friend_id", ignoreDuplicates: true });
+      assertNoDbError(error, "Create friendship failed");
+    }
+
+    async function sendFriendRequest(targetUsername) {
+      const { data: target, error: targetError } = await supabase
+        .from("users")
+        .select("id, username, display_name")
+        .eq("username", targetUsername)
+        .eq("is_active", true)
+        .maybeSingle();
+      assertNoDbError(targetError, "Send request failed");
+      if (!target) {
+        return { ok: false, msg: t("userNotFound") };
+      }
+      if (Number(target.id) === Number(currentUser.id)) {
+        return { ok: false, msg: t("cannotAddSelf") };
+      }
+
+      const { data: alreadyFriend, error: alreadyFriendError } = await supabase
+        .from("friendships")
+        .select("id")
+        .eq("user_id", currentUser.id)
+        .eq("friend_id", target.id)
+        .limit(1)
+        .maybeSingle();
+      assertNoDbError(alreadyFriendError, "Send request failed");
+      if (alreadyFriend) {
+        return { ok: false, msg: t("alreadyFriends") };
+      }
+
+      const { data: reversePending, error: reversePendingError } = await supabase
+        .from("friend_requests")
+        .select("id")
+        .eq("sender_id", target.id)
+        .eq("receiver_id", currentUser.id)
+        .eq("status", "pending")
+        .limit(1)
+        .maybeSingle();
+      assertNoDbError(reversePendingError, "Send request failed");
+
+      if (reversePending) {
+        const { error: acceptError } = await supabase
+          .from("friend_requests")
+          .update({ status: "accepted", updated_at: new Date().toISOString() })
+          .eq("id", reversePending.id);
+        assertNoDbError(acceptError, "Send request failed");
+        await createFriendshipPair(currentUser.id, target.id);
+        return { ok: true, msg: t("autoBecameFriends") };
+      }
+
+      const { data: existsPending, error: existsPendingError } = await supabase
+        .from("friend_requests")
+        .select("id")
+        .eq("sender_id", currentUser.id)
+        .eq("receiver_id", target.id)
+        .eq("status", "pending")
+        .limit(1)
+        .maybeSingle();
+      assertNoDbError(existsPendingError, "Send request failed");
+
+      if (existsPending) {
+        return { ok: false, msg: t("requestAlreadySent") };
+      }
+
+      const nowIso = new Date().toISOString();
+      const { error: insertError } = await supabase.from("friend_requests").insert({
+        sender_id: currentUser.id,
+        receiver_id: target.id,
+        status: "pending",
+        created_at: nowIso,
+        updated_at: nowIso,
+      });
+      assertNoDbError(insertError, "Send request failed");
+
+      return { ok: true, msg: t("requestSentTo", { username: target.username }) };
+    }
+
+    async function fetchIncomingRequests() {
+      const { data: rows, error } = await supabase
+        .from("friend_requests")
+        .select("id, sender_id, created_at")
+        .eq("receiver_id", currentUser.id)
+        .eq("status", "pending")
+        .order("created_at", { ascending: false });
+      assertNoDbError(error, "Fetch requests failed");
+      if (!rows || !rows.length) return [];
+
+      const senderIds = [...new Set(rows.map((r) => Number(r.sender_id)))];
+      const { data: users, error: userError } = await supabase
+        .from("users")
+        .select("id, username, display_name")
+        .in("id", senderIds);
+      assertNoDbError(userError, "Fetch requests failed");
+      const userById = new Map((users || []).map((u) => [Number(u.id), u]));
+
+      return rows.map((r) => {
+        const u = userById.get(Number(r.sender_id)) || {};
+        return {
+          id: r.id,
+          sender_id: r.sender_id,
+          username: u.username || "",
+          display_name: u.display_name || t("userDefaultName"),
+          created_at: r.created_at,
+        };
+      });
+    }
+
+    async function fetchOutgoingRequests() {
+      const { data: rows, error } = await supabase
+        .from("friend_requests")
+        .select("id, receiver_id, created_at")
+        .eq("sender_id", currentUser.id)
+        .eq("status", "pending")
+        .order("created_at", { ascending: false });
+      assertNoDbError(error, "Fetch requests failed");
+      if (!rows || !rows.length) return [];
+
+      const receiverIds = [...new Set(rows.map((r) => Number(r.receiver_id)))];
+      const { data: users, error: userError } = await supabase
+        .from("users")
+        .select("id, username, display_name")
+        .in("id", receiverIds);
+      assertNoDbError(userError, "Fetch requests failed");
+      const userById = new Map((users || []).map((u) => [Number(u.id), u]));
+
+      return rows.map((r) => {
+        const u = userById.get(Number(r.receiver_id)) || {};
+        return {
+          id: r.id,
+          receiver_id: r.receiver_id,
+          username: u.username || "",
+          display_name: u.display_name || t("userDefaultName"),
+          created_at: r.created_at,
+        };
+      });
+    }
+
+    async function acceptRequest(requestId) {
+      const { data: rows, error } = await supabase
+        .from("friend_requests")
+        .update({ status: "accepted", updated_at: new Date().toISOString() })
+        .eq("id", requestId)
+        .eq("receiver_id", currentUser.id)
+        .eq("status", "pending")
+        .select("sender_id");
+      assertNoDbError(error, "Accept request failed");
+      const row = rows && rows[0];
+      if (!row) return false;
+      await createFriendshipPair(currentUser.id, row.sender_id);
+      return true;
+    }
+
+    async function rejectRequest(requestId) {
+      const { error } = await supabase
+        .from("friend_requests")
+        .update({ status: "rejected", updated_at: new Date().toISOString() })
+        .eq("id", requestId)
+        .eq("receiver_id", currentUser.id)
+        .eq("status", "pending");
+      assertNoDbError(error, "Reject request failed");
+    }
+
+    async function fetchFriends() {
+      const { data: friendships, error: friendError } = await supabase
+        .from("friendships")
+        .select("friend_id")
+        .eq("user_id", currentUser.id);
+      assertNoDbError(friendError, "Fetch friends failed");
+
+      const friendIds = [...new Set((friendships || []).map((f) => Number(f.friend_id)))];
+      let users = null;
+      let usersError = null;
+      if (friendIds.length > 0) {
+        ({ data: users, error: usersError } = await supabase
+          .from("users")
+          .select("id, username, display_name, avatar_data, last_seen_at, typing_to_user_id, typing_at")
+          .in("id", friendIds));
+        if (usersError && isMissingAvatarColumnError(usersError)) {
+          ({ data: users, error: usersError } = await supabase
+            .from("users")
+            .select("id, username, display_name, last_seen_at, typing_to_user_id, typing_at")
+            .in("id", friendIds));
+        }
+      }
+      assertNoDbError(usersError, "Fetch friends failed");
+      const userById = new Map((users || []).map((u) => [Number(u.id), {
+        ...u,
+        avatar_data: normalizeAvatarData(u.avatar_data),
+      }]));
+
+      let allMsgs = [];
+      let msgError = null;
+      if (friendIds.length > 0) {
+        const orFilter = `and(sender_id.eq.${currentUser.id},receiver_id.in.(${friendIds.join(",")})),and(receiver_id.eq.${currentUser.id},sender_id.in.(${friendIds.join(",")}))`;
+        ({ data: allMsgs, error: msgError } = await supabase
+          .from("messages")
+          .select("id, sender_id, receiver_id, content, message_type, created_at")
+          .or(orFilter)
+          .order("created_at", { ascending: false })
+          .order("id", { ascending: false })
+          .limit(5000));
+      }
+      assertNoDbError(msgError, "Fetch friends failed");
+
+      const latestMsgByFriend = new Map();
+      for (const m of (allMsgs || [])) {
+        const fid = Number(m.sender_id) === Number(currentUser.id) ? Number(m.receiver_id) : Number(m.sender_id);
+        if (!latestMsgByFriend.has(fid)) latestMsgByFriend.set(fid, m);
+      }
+
+      let sessions = [];
+      let sessionError = null;
+      if (friendIds.length > 0) {
+        ({ data: sessions, error: sessionError } = await supabase
+          .from("user_sessions")
+          .select("user_id, logout_at, last_seen_at, login_at")
+          .in("user_id", friendIds)
+          .order("login_at", { ascending: false }));
+      }
+      assertNoDbError(sessionError, "Fetch friends failed");
+      const latestSessionByFriend = new Map();
+      for (const s of (sessions || [])) {
+        const fid = Number(s.user_id);
+        if (!latestSessionByFriend.has(fid)) latestSessionByFriend.set(fid, s);
+      }
+
+      let unreadRows = [];
+      let unreadError = null;
+      if (friendIds.length > 0) {
+        ({ data: unreadRows, error: unreadError } = await supabase
+          .from("messages")
+          .select("sender_id")
+          .eq("receiver_id", currentUser.id)
+          .is("read_at", null)
+          .in("sender_id", friendIds));
+      }
+      assertNoDbError(unreadError, "Fetch friends failed");
+      const unreadByFriend = new Map();
+      for (const r of (unreadRows || [])) {
+        const fid = Number(r.sender_id);
+        unreadByFriend.set(fid, Number(unreadByFriend.get(fid) || 0) + 1);
+      }
+
+      const nowMs = Date.now();
+      const rows = (friendships || []).map((f) => {
+        const fid = Number(f.friend_id);
+        const u = userById.get(fid) || {};
+        const m = latestMsgByFriend.get(fid);
+        const s = latestSessionByFriend.get(fid);
+
+        let preview = "";
+        if (m) {
+          if (m.message_type === "image") preview = t("imageLabel");
+          else if (m.message_type === "audio") preview = t("voiceLabel");
+          else if (m.message_type === "file") preview = t("documentLabel");
+          else if (m.message_type === "location") preview = t("locationLabel");
+          else preview = m.content || "-";
+        }
+
+        const sessionSeenAt = s ? (s.logout_at || s.last_seen_at) : null;
+        const isOnline = !!(
+          s
+          && !s.logout_at
+          && s.last_seen_at
+          && (nowMs - new Date(s.last_seen_at).getTime()) <= 20000
+        );
+        const isSelf = Number(fid) === Number(currentUser.id);
+        const isTyping = !!(
+          Number(u.typing_to_user_id || 0) === Number(currentUser.id)
+          && u.typing_at
+          && (nowMs - new Date(u.typing_at).getTime()) <= 5000
+        );
+
+        return {
+          id: fid,
+          username: u.username || "",
+          display_name: u.display_name || t("userDefaultName"),
+          avatar_data: normalizeAvatarData(u.avatar_data),
+          last_message_at: (m && m.created_at) || u.last_seen_at || new Date().toISOString(),
+          last_message_preview: preview,
+          last_seen_at: sessionSeenAt || u.last_seen_at,
+          is_online: isSelf ? true : isOnline,
+          is_typing: isTyping,
+          unread_count: Number(unreadByFriend.get(fid) || 0),
+        };
+      });
+
+      rows.sort((a, b) => {
+        const ta = new Date(a.last_message_at || 0).getTime();
+        const tb = new Date(b.last_message_at || 0).getTime();
+        if (ta !== tb) return tb - ta;
+        return String(a.display_name || a.username).localeCompare(String(b.display_name || b.username));
+      });
+      return rows;
+    }
+
+    async function setTyping(friendId) {
+      if (!currentUser) return;
+      await updatePresence();
+      const { error } = await supabase
+        .from("users")
+        .update({ typing_to_user_id: friendId || null, typing_at: new Date().toISOString() })
+        .eq("id", currentUser.id);
+      assertNoDbError(error, "Typing update failed");
+    }
+
+    async function clearTyping() {
+      if (!currentUser) return;
+      await updatePresence();
+      const { error } = await supabase
+        .from("users")
+        .update({ typing_to_user_id: null, typing_at: null })
+        .eq("id", currentUser.id);
+      assertNoDbError(error, "Typing update failed");
+    }
+
+    async function fetchMessages(friendId, limitRows = CHAT_FETCH_ROWS) {
+      const orFilter = `and(sender_id.eq.${currentUser.id},receiver_id.eq.${friendId}),and(sender_id.eq.${friendId},receiver_id.eq.${currentUser.id})`;
+      const { data, error } = await supabase
+        .from("messages")
+        .select("id, sender_id, receiver_id, content, message_type, media_data, latitude, longitude, created_at, read_at")
+        .or(orFilter)
+        .order("created_at", { ascending: false })
+        .order("id", { ascending: false })
+        .limit(limitRows);
+      assertNoDbError(error, "Fetch messages failed");
+      return (data || []).slice().reverse();
+    }
+
+    async function trimMessagesForFreeTier() {
+      const { count, error } = await supabase.from("messages").select("id", { count: "exact", head: true });
+      assertNoDbError(error, "Trim messages failed");
+      const total = Number(count || 0);
+      if (total < MAX_MESSAGE_ROWS) return;
+
+      const removeCount = total - (MAX_MESSAGE_ROWS - 1);
+      if (removeCount <= 0) return;
+
+      const { data: oldRows, error: oldError } = await supabase
+        .from("messages")
+        .select("id")
+        .order("created_at", { ascending: true })
+        .order("id", { ascending: true })
+        .limit(removeCount);
+      assertNoDbError(oldError, "Trim messages failed");
+      const ids = (oldRows || []).map((r) => Number(r.id));
+      if (!ids.length) return;
+      const { error: delError } = await supabase.from("messages").delete().in("id", ids);
+      assertNoDbError(delError, "Trim messages failed");
+    }
+
+    async function trimConversationMessages(friendId, keepCount = 20) {
+      const orFilter = `and(sender_id.eq.${currentUser.id},receiver_id.eq.${friendId}),and(sender_id.eq.${friendId},receiver_id.eq.${currentUser.id})`;
+      const { data: toDeleteRows, error } = await supabase
+        .from("messages")
+        .select("id")
+        .or(orFilter)
+        .order("created_at", { ascending: false })
+        .order("id", { ascending: false })
+        .range(keepCount, keepCount + 5000);
+      assertNoDbError(error, "Trim conversation failed");
+      const ids = (toDeleteRows || []).map((r) => Number(r.id));
+      if (!ids.length) return;
+      const { error: delError } = await supabase.from("messages").delete().in("id", ids);
+      assertNoDbError(delError, "Trim conversation failed");
+    }
+
+    async function markRead(friendId) {
+      const { data: updated, error } = await supabase
+        .from("messages")
+        .update({ read_at: new Date().toISOString() })
+        .eq("sender_id", friendId)
+        .eq("receiver_id", currentUser.id)
+        .is("read_at", null)
+        .select("id");
+      assertNoDbError(error, "Mark read failed");
+
+      if (updated.length > 0) {
+        await trimConversationMessages(friendId, 20);
+      }
+    }
+
+    async function deleteOwnMessage(messageId) {
+      const { error } = await supabase
+        .from("messages")
+        .update({
+          content: t("deletedMessage"),
+          message_type: "text",
+          media_data: null,
+          latitude: null,
+          longitude: null,
+        })
+        .eq("id", messageId)
+        .eq("sender_id", currentUser.id);
+      assertNoDbError(error, "Delete message failed");
+    }
+
+    async function sendMessage(friendId, payload) {
+      const data = (typeof payload === "string")
+        ? { content: payload, messageType: "text", mediaData: null, latitude: null, longitude: null }
+        : {
+            content: payload?.content || "",
+            messageType: payload?.messageType || "text",
+            mediaData: payload?.mediaData || null,
+            latitude: payload?.latitude ?? null,
+            longitude: payload?.longitude ?? null,
+          };
+
+      try {
+        await updatePresence();
+      } catch {}
+
+      try {
+        await trimMessagesForFreeTier();
+      } catch {}
+
+      const { error } = await supabase.from("messages").insert({
+        sender_id: currentUser.id,
+        receiver_id: friendId,
+        content: data.content,
+        message_type: data.messageType,
+        media_data: data.mediaData,
+        latitude: data.latitude,
+        longitude: data.longitude,
+        created_at: new Date().toISOString(),
+      });
+      assertNoDbError(error, "Send message failed");
+    }
+
+    function renderIncoming(rows) {
+      updateRequestBadge(rows.length);
+
+      if (!rows.length) {
+        els.incomingList.innerHTML = `<div class="muted">${t("noIncomingRequests")}</div>`;
+        return;
+      }
+
+      els.incomingList.innerHTML = rows.map((r) => `
+        <div class="item">
+          <div class="item-top">
+            <strong>${r.display_name}</strong>
+            <span class="muted">@${r.username}</span>
+          </div>
+          <div class="muted">${formatTime(r.created_at)}</div>
+          <div style="display:flex; gap:6px; margin-top:6px;">
+            <button class="btn-primary" data-action="accept" data-id="${r.id}">${t("accept")}</button>
+            <button class="btn-danger" data-action="reject" data-id="${r.id}">${t("reject")}</button>
+          </div>
+        </div>
+      `).join("");
+    }
+
+    function renderOutgoing(rows) {
+      if (!rows.length) {
+        els.outgoingList.innerHTML = `<div class="muted">${t("noOutgoingRequests")}</div>`;
+        return;
+      }
+
+      els.outgoingList.innerHTML = rows.map((r) => `
+        <div class="item">
+          <div class="item-top">
+            <strong>${r.display_name}</strong>
+            <span class="muted">@${r.username}</span>
+          </div>
+          <div class="muted">${t("sentAt", { time: formatTime(r.created_at) })}</div>
+        </div>
+      `).join("");
+    }
+
+    function renderFriends(rows) {
+      latestFriends = rows || [];
+      if (currentUser) {
+        saveCachedFriends(currentUser.id, latestFriends);
+      }
+
+      const keyword = friendSearchKeyword.trim().toLowerCase();
+      const filteredRows = !keyword
+        ? latestFriends
+        : latestFriends.filter((f) => {
+            const displayName = String(f.display_name || "").toLowerCase();
+            const username = String(f.username || "").toLowerCase();
+            const preview = String(f.last_message_preview || "").toLowerCase();
+            return displayName.includes(keyword) || username.includes(keyword) || preview.includes(keyword);
+          });
+
+      if (!latestFriends.length) {
+        const emptyHtml = `<div class="muted">${t("noFriends")}</div>`;
+        if (els.friendsList.innerHTML !== emptyHtml) {
+          els.friendsList.innerHTML = emptyHtml;
+        }
+        lastFriendsRenderKey = "__empty__";
+        return;
+      }
+
+      if (!filteredRows.length) {
+        const emptyHtml = `<div class="muted">${t("noSearchResults")}</div>`;
+        if (els.friendsList.innerHTML !== emptyHtml) {
+          els.friendsList.innerHTML = emptyHtml;
+        }
+        lastFriendsRenderKey = "__search_empty__";
+        return;
+      }
+
+      const renderKey = filteredRows.map((f) => {
+        const selected = selectedFriend && Number(selectedFriend.id) === Number(f.id) ? 1 : 0;
+        return [
+          Number(f.id),
+          f.display_name,
+          f.username,
+          normalizeAvatarData(f.avatar_data),
+          f.last_message_preview || "",
+          f.last_message_at || "",
+          f.is_online ? 1 : 0,
+          f.is_typing ? 1 : 0,
+          Number(f.unread_count || 0),
+          f.last_seen_at || "",
+          selected,
+        ].join("|");
+      }).join("||");
+
+      if (renderKey === lastFriendsRenderKey) {
+        return;
+      }
+      lastFriendsRenderKey = renderKey;
+
+      els.friendsList.innerHTML = filteredRows.map((f) => {
+        const unreadCount = Number(f.unread_count || 0);
+        const avatarSrc = resolveAvatarSrc(f);
+        return `
+        <div class="item ${selectedFriend && Number(selectedFriend.id) === Number(f.id) ? "active" : ""}" data-friend-id="${f.id}" data-friend-name="${f.display_name}" data-friend-username="${f.username}" data-friend-online="${f.is_online}" data-friend-typing="${f.is_typing}" data-friend-unread="${unreadCount}" data-friend-last-seen="${f.last_seen_at || ""}">
+          <div class="item-top">
+            <div class="friend-main">
+              <img class="friend-avatar" src="${escapeHtml(avatarSrc)}" alt="avatar" />
+              <div class="friend-info">
+                <strong class="friend-name-line">
+                  <span class="status-dot ${f.is_online ? "status-online" : "status-offline"}"></span>
+                  <span>${f.display_name}</span>
+                </strong>
+                <div class="friend-meta">${f.is_online ? t("online") : t("lastSeen", { time: formatLastSeen(f.last_seen_at) })}</div>
+                <div class="friend-preview">${escapeHtml(f.last_message_preview || "-")}</div>
+              </div>
+            </div>
+            <div style="display:flex; align-items:center; gap:6px;">
+              <span class="friend-time">${formatChatListTime(f.last_message_at)}</span>
+              ${unreadCount > 0 ? `<span class="badge-dot">${unreadCount > 99 ? "99+" : unreadCount}</span>` : ""}
+              <span class="muted">@${f.username}</span>
+            </div>
+          </div>
+        </div>
+      `;
+      }).join("");
+    }
+
+    function renderChatStatus(friend) {
+      if (!friend) {
+        els.chatSub.textContent = t("selectChat");
+        els.typingHint.classList.add("hidden");
+        return;
+      }
+      const online = !!friend.is_online;
+      const statusText = online ? t("online") : t("lastSeen", { time: formatLastSeen(friend.last_seen_at) });
+      els.chatSub.innerHTML = `<span class="status-dot ${online ? "status-online" : "status-offline"}" style="margin-right:6px;"></span>${statusText}`;
+      els.typingHint.classList.toggle("hidden", !friend.is_typing);
+    }
+
+    function renderMessages(rows) {
+      if (!selectedFriend) {
+        const emptyHtml = `<div class="empty-state">${t("selectFriendToChat")}</div>`;
+        if (els.chatList.innerHTML !== emptyHtml) {
+          els.chatList.innerHTML = emptyHtml;
+        }
+        lastMessagesRenderKey = "__no_selected__";
+        return;
+      }
+
+      const friendId = Number(selectedFriend.id);
+      const pending = getPendingMessages(friendId);
+      const mergedRows = [...rows, ...pending];
+      const latestReadMineId = mergedRows.reduce((latestId, message) => {
+        if (message._pending) return latestId;
+        if (Number(message.sender_id) !== Number(currentUser.id)) return latestId;
+        if (!message.read_at) return latestId;
+        return Number(message.id) > latestId ? Number(message.id) : latestId;
+      }, 0);
+
+      if (!mergedRows.length) {
+        if (isConversationLoading) {
+          const loadingHtml = `<div class="empty-state">${t("loadingMessages")}</div>`;
+          if (els.chatList.innerHTML !== loadingHtml) {
+            els.chatList.innerHTML = loadingHtml;
+          }
+          lastMessagesRenderKey = "__loading_messages__";
+          return;
+        }
+
+        const emptyHtml = `<div class="empty-state">${t("noMessages")}</div>`;
+        if (els.chatList.innerHTML !== emptyHtml) {
+          els.chatList.innerHTML = emptyHtml;
+        }
+        lastMessagesRenderKey = "__no_messages__";
+        return;
+      }
+
+      const renderKey = mergedRows.map((m) => `${m.id}|${m.sender_id}|${m.receiver_id}|${m.message_type || "text"}|${m.content}|${m.media_data || ""}|${m.latitude || ""}|${m.longitude || ""}|${m.created_at}|${m.read_at || ""}|${m._pending ? 1 : 0}`).join("||");
+      if (renderKey === lastMessagesRenderKey) {
+        return;
+      }
+      lastMessagesRenderKey = renderKey;
+
+      els.chatList.innerHTML = mergedRows.map((m) => {
+        const mine = Number(m.sender_id) === Number(currentUser.id);
+        const timeSuffix = m._pending ? ` · ${t("sending")}` : "";
+        const readReceipt = (!m._pending && mine && Number(m.id) === latestReadMineId)
+          ? `<div class="read-receipt">${t("peerRead")}</div>`
+          : "";
+        const canDelete = mine && !m._pending && String(m.content || "") !== String(t("deletedMessage"));
+        const bubbleActions = canDelete
+          ? `<div class="bubble-actions"><button class="bubble-action-btn" type="button" data-action="delete-message" data-message-id="${m.id}">${t("deleteMessage")}</button></div>`
+          : "";
+        return `
+          <div class="bubble ${mine ? "mine" : "other"}">
+            ${renderMessageBody(m)}
+            <div class="time">${formatTime(m.created_at)}${mine ? timeSuffix : ""}</div>
+            ${readReceipt}
+            ${bubbleActions}
+          </div>
+        `;
+      }).join("");
+
+      els.chatList.scrollTop = els.chatList.scrollHeight;
+    }
+
+    async function refreshAll() {
+      if (!currentUser) return;
+      if (refreshRunning) return;
+
+      refreshRunning = true;
+
+      try {
+        const [incoming, outgoing, friends] = await Promise.all([
+          fetchIncomingRequests(),
+          fetchOutgoingRequests(),
+          fetchFriends(),
+        ]);
+
+        notifyUnreadChanges(friends);
+
+        const displayFriends = applyActiveChatReadState(friends);
+
+        renderIncoming(incoming);
+        renderOutgoing(outgoing);
+        renderFriends(displayFriends);
+
+        if (selectedFriend) {
+          const exist = displayFriends.find((f) => Number(f.id) === Number(selectedFriend.id));
+          if (!exist) {
+            // Avoid false jump-back on first open while background refresh catches up.
+            if (Date.now() < selectedFriendGuardUntil) {
+              try {
+                const rows = await fetchMessages(selectedFriend.id);
+                updateConversationState(selectedFriend.id, rows);
+                renderMessages(rows);
+                markRead(selectedFriend.id).catch(() => {});
+              } catch {}
+              return;
+            }
+
+            // Keep current chat when friend list is temporarily empty to avoid false deselection.
+            if (!displayFriends.length) {
+              try {
+                const rows = await fetchMessages(selectedFriend.id);
+                updateConversationState(selectedFriend.id, rows);
+                renderMessages(rows);
+                markRead(selectedFriend.id).catch(() => {});
+              } catch {}
+              return;
+            }
+
+            clearSelectedFriend();
+            showFriendsView();
+            return;
+          }
+          selectedFriendGuardUntil = 0;
+          selectedFriend = exist;
+          renderChatStatus(selectedFriend);
+          const now = Date.now();
+          if (now - lastActiveChatSyncAt >= ACTIVE_CHAT_SYNC_MIN_INTERVAL_MS || isConversationLoading) {
+            const rows = await fetchMessages(selectedFriend.id);
+            lastActiveChatSyncAt = now;
+            updateConversationState(selectedFriend.id, rows);
+            renderMessages(rows);
+            const hasUnreadFromPeer = rows.some((m) => Number(m.sender_id) === Number(selectedFriend.id) && !m.read_at && !m._pending);
+            if (hasUnreadFromPeer) {
+              markRead(selectedFriend.id).catch(() => {});
+            }
+          }
+        }
+      } finally {
+        refreshRunning = false;
+      }
+    }
+
+    function startPolling() {
+      stopPolling();
+      pollTimer = setInterval(() => {
+        refreshAll().catch((e) => {
+          if (isNetworkError(e)) {
+            showNetworkErrorModal();
+          } else {
+            setFriendMsg(t("refreshFailed", { message: e.message || t("unknownError") }));
+          }
+        });
+      }, POLL_MS);
+    }
+
+    function stopPolling() {
+      if (pollTimer) {
+        clearInterval(pollTimer);
+        pollTimer = null;
+      }
+    }
+
+    function triggerForegroundRefresh() {
+      if (!currentUser) return;
+      updatePresence().catch(() => {});
+      refreshAll().catch((error) => {
+        setFriendMsg(t("refreshFailed", { message: error.message || t("unknownError") }));
+      });
+    }
+
+    els.langZhBtn.addEventListener("click", () => setLanguage("zh"));
+    els.langEnBtn.addEventListener("click", () => setLanguage("en"));
+    els.tabLogin.addEventListener("click", () => setAuthMode("login"));
+    els.tabRegister.addEventListener("click", () => setAuthMode("register"));
+    els.toggleChatsBtn.addEventListener("click", () => setUtilityPanel(null));
+    els.toggleAddFriendBtn.addEventListener("click", () => setUtilityPanel("add"));
+    els.toggleRequestsBtn.addEventListener("click", () => setUtilityPanel("requests"));
+    els.toggleAccountBtn.addEventListener("click", () => setUtilityPanel("account"));
+    els.incomingTabBtn.addEventListener("click", () => setRequestTab("incoming"));
+    els.outgoingTabBtn.addEventListener("click", () => setRequestTab("outgoing"));
+    els.friendsSearch.addEventListener("input", () => {
+      friendSearchKeyword = els.friendsSearch.value || "";
+      lastFriendsRenderKey = "";
+      renderFriends(latestFriends);
+    });
+
+    els.registerForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const username = els.regUsername.value.trim();
+      const displayName = els.regDisplayName.value.trim();
+      const password = els.regPassword.value;
+      const password2 = els.regPassword2.value;
+
+      if (username.length < 3) return setAuthMsg(t("usernameMin"));
+      if (!/^[a-zA-Z0-9_]+$/.test(username)) return setAuthMsg(t("usernameRule"));
+      if (displayName.length < 2) return setAuthMsg(t("displayNameMin"));
+      if (password.length < 6) return setAuthMsg(t("passwordMin"));
+      if (password !== password2) return setAuthMsg(t("passwordMismatch"));
+
+      const online = await ensureInternetConnection({ showModal: true });
+      if (!online) return;
+
+      try {
+        await registerUser(username, displayName, password);
+        setAuthMsg(t("registerSuccess"), true);
+        els.registerForm.reset();
+        els.loginUsername.value = username;
+        setAuthMode("login");
+      } catch (error) {
+        if (isNetworkError(error)) {
+          showNetworkErrorModal();
+        } else if (String(error.message || "").toLowerCase().includes("unique")) {
+          setAuthMsg(t("usernameExists"));
+        } else {
+          setAuthMsg(t("registerFailed", { message: error.message || t("unknownError") }));
+        }
+      }
+    });
+
+    function startAuthProgress() {
+      const bar = document.getElementById("authProgress");
+      if (!bar) return;
+      bar.classList.remove("done");
+      bar.style.opacity = "";
+      bar.classList.add("running");
+    }
+
+    function finishAuthProgress() {
+      const bar = document.getElementById("authProgress");
+      if (!bar) return;
+      bar.classList.remove("running");
+      bar.classList.add("done");
+      setTimeout(() => {
+        bar.classList.remove("done");
+        bar.style.opacity = "0";
+      }, 500);
+    }
+
+    els.loginForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const username = els.loginUsername.value.trim();
+      const password = els.loginPassword.value;
+
+      if (!username || !password) return setAuthMsg(t("needCredentials"));
+
+      const online = await ensureInternetConnection({ showModal: true });
+      if (!online) {
+        return;
+      }
+
+      startAuthProgress();
+      els.loginBtn.disabled = true;
+      try {
+        const user = await loginUser(username, password);
+        finishAuthProgress();
+        if (!user) { setAuthMsg(t("wrongCredentials")); return; }
+        await finishLogin(user, { username, password }, "autoLoginEnabled");
+      } catch (error) {
+        finishAuthProgress();
+        if (isNetworkError(error)) {
+          showNetworkErrorModal();
+        } else {
+          setAuthMsg(t("loginFailed", { message: error.message || t("unknownError") }));
+        }
+      } finally {
+        els.loginBtn.disabled = false;
+      }
+    });
+
+    els.logoutBtn.addEventListener("click", () => {
+      cancelVoiceRecording();
+      clearTypingTimers();
+      stopPolling();
+      markOffline().catch(() => {});
+      clearAuthCache();
+      clearUserCache();
+      clearSessionFromStorage();
+      setAutoLoginHint("");
+      currentUser = null;
+      clearSelectedFriend();
+      showFriendsView();
+      activeUtilityPanel = null;
+      sessionId = null;
+      latestFriends = [];
+      pendingMessagesByFriend.clear();
+      conversationCacheByFriend.clear();
+      unreadSnapshotByFriend.clear();
+      lastNotifiedMessageAtByFriend.clear();
+      unreadSnapshotReady = false;
+      lastTotalUnreadCount = 0;
+      lastFriendsRenderKey = "";
+      setUtilityPanel(null);
+      setRequestTab("incoming");
+      updateRequestBadge(0);
+      els.friendsList.innerHTML = "";
+      els.incomingList.innerHTML = "";
+      els.outgoingList.innerHTML = "";
+      updateView();
+      setAuthMode("login");
+      setAuthMsg(t("loggedOut"), true);
+    });
+
+    els.addFriendForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (!currentUser) return;
+
+      const username = els.friendUsername.value.trim();
+      if (!username) return setFriendMsg(t("enterTargetUsername"));
+
+      try {
+        const result = await sendFriendRequest(username);
+        setFriendMsg(result.msg, result.ok);
+        if (result.ok) {
+          els.addFriendForm.reset();
+          setUtilityPanel(null);
+          await refreshAll();
+        }
+      } catch (error) {
+        setFriendMsg(t("sendFailed", { message: error.message || t("unknownError") }));
+      }
+    });
+
+    els.accountForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (!currentUser) return;
+
+      const currentPassword = els.currentPassword.value;
+      const newPassword = els.newPassword.value;
+      const confirmPassword = els.newPassword2.value;
+
+      if (newPassword.length < 6) {
+        setFriendMsg(t("passwordMin"));
+        alert(t("passwordMin"));
+        return;
+      }
+      if (newPassword !== confirmPassword) {
+        setFriendMsg(t("passwordMismatch"));
+        alert(t("passwordMismatch"));
+        return;
+      }
+
+      try {
+        const ok = await changePassword(currentPassword, newPassword);
+        if (!ok) {
+          setFriendMsg(t("currentPasswordWrong"));
+          alert(t("currentPasswordWrong"));
+          return;
+        }
+
+        els.accountForm.reset();
+        setFriendMsg(t("passwordUpdated"), true);
+        alert(t("passwordUpdated"));
+        setUtilityPanel(null);
+      } catch (error) {
+        const reason = t("processFailed", { message: error.message || t("unknownError") });
+        setFriendMsg(reason);
+        alert(reason);
+      }
+    });
+
+    els.uploadAvatarBtn.addEventListener("click", () => {
+      if (!currentUser) return;
+      els.avatarInput.value = "";
+      els.avatarInput.click();
+    });
+
+    els.takeAvatarBtn.addEventListener("click", async () => {
+      if (!currentUser) return;
+      const originalLabel = els.takeAvatarBtn.textContent;
+      els.takeAvatarBtn.disabled = true;
+      els.takeAvatarBtn.textContent = "⏳";
+      try {
+        await openCameraOverlay("avatar");
+      } catch (error) {
+        const message = resolveCameraErrorMessage(error);
+        setFriendMsg(message);
+        alert(message);
+      } finally {
+        els.takeAvatarBtn.disabled = false;
+        els.takeAvatarBtn.textContent = originalLabel || t("takeAvatar");
+      }
+    });
+
+    els.avatarInput.addEventListener("change", async () => {
+      const file = els.avatarInput.files && els.avatarInput.files[0];
+      if (!file || !currentUser) return;
+
+      const maxBytes = MAX_AVATAR_FILE_MB * 1024 * 1024;
+      if (file.size > maxBytes) {
+        const msg = t("imageTooLarge", { size: MAX_AVATAR_FILE_MB });
+        setFriendMsg(msg);
+        alert(msg);
+        els.avatarInput.value = "";
+        return;
+      }
+
+      try {
+        const mediaData = await readFileAsDataURL(file);
+        await updateAvatar(mediaData);
+        setFriendMsg(t("avatarUpdated"), true);
+      } catch (error) {
+        const msg = t("avatarUpdateFailed", { message: error.message || t("unknownError") });
+        setFriendMsg(msg);
+        alert(msg);
+      } finally {
+        els.avatarInput.value = "";
+      }
+    });
+
+    els.incomingList.addEventListener("click", async (e) => {
+      const btn = e.target.closest("button[data-action]");
+      if (!btn || !currentUser) return;
+
+      const id = Number(btn.dataset.id);
+      const action = btn.dataset.action;
+      try {
+        if (action === "accept") {
+          await acceptRequest(id);
+          setFriendMsg(t("acceptedRequest"), true);
+        } else if (action === "reject") {
+          await rejectRequest(id);
+          setFriendMsg(t("rejectedRequest"), true);
+        }
+        await refreshAll();
+      } catch (error) {
+        setFriendMsg(t("processFailed", { message: error.message || t("unknownError") }));
+      }
+    });
+
+    els.friendsList.addEventListener("click", async (e) => {
+      const avatar = e.target.closest("img.friend-avatar");
+      if (avatar) {
+        openImageViewer(avatar.currentSrc || avatar.src || "");
+        return;
+      }
+
+      if (bootstrapInProgress) {
+        setFriendMsg(t("loadingMessages"));
+        return;
+      }
+
+      const card = e.target.closest(".item[data-friend-id]");
+      if (!card || !currentUser) return;
+
+      const friendId = Number(card.dataset.friendId);
+      let friend = latestFriends.find((f) => Number(f.id) === friendId);
+
+      if (!friend && card.dataset.friendUsername) {
+        friend = latestFriends.find((f) => String(f.username) === String(card.dataset.friendUsername));
+      }
+
+      if (!friend) {
+        setFriendMsg(t("processFailed", { message: t("unknownError") }));
+        return;
+      }
+
+      selectedFriend = {
+        id: Number(friend.id),
+        display_name: friend.display_name,
+        username: friend.username,
+        is_online: !!friend.is_online,
+        is_typing: !!friend.is_typing,
+        unread_count: 0,
+        last_seen_at: friend.last_seen_at || null,
+      };
+      selectedFriendGuardUntil = Date.now() + 8000;
+      lastActiveChatSyncAt = 0;
+      latestFriends = latestFriends.map((item) => (
+        Number(item.id) === friendId
+          ? { ...item, unread_count: 0 }
+          : item
+      ));
+      lastFriendsRenderKey = "";
+      renderFriends(latestFriends);
+      lastMessagesRenderKey = "";
+
+      els.chatTitle.textContent = `${selectedFriend.display_name} (@${selectedFriend.username})`;
+      renderChatStatus(selectedFriend);
+      els.chatInput.disabled = false;
+      els.sendBtn.disabled = false;
+      els.emojiToggleBtn.disabled = false;
+      updateVoiceRecordButton();
+      els.pickImageBtn.disabled = false;
+      els.takePhotoBtn.disabled = false;
+      els.sendLocationBtn.disabled = false;
+      els.sendDocBtn.disabled = false;
+      setUtilityPanel(null);
+      showChatView();
+      currentConversationFriendId = Number(selectedFriend.id);
+      const cachedRows = conversationCacheByFriend.get(Number(selectedFriend.id)) || [];
+      if (cachedRows.length) {
+        updateConversationState(selectedFriend.id, cachedRows);
+        isConversationLoading = false;
+        renderMessages(cachedRows);
+      } else {
+        currentConversationRows = [];
+        isConversationLoading = true;
+        renderMessages([]);
+      }
+
+      fetchMessages(selectedFriend.id)
+        .then(async (rows) => {
+          updateConversationState(selectedFriend.id, rows);
+          lastActiveChatSyncAt = Date.now();
+          isConversationLoading = false;
+          renderMessages(rows);
+          markRead(selectedFriend.id).catch(() => {});
+        })
+        .catch((error) => {
+          isConversationLoading = false;
+          setFriendMsg(t("refreshFailed", { message: error.message || t("unknownError") }));
+        });
+    });
+
+    els.backToFriendsBtn.addEventListener("click", () => {
+      cancelVoiceRecording();
+      clearTyping().catch(() => {});
+      clearSelectedFriend();
+      showFriendsView();
+      refreshAll().catch(() => {});
+    });
+
+    els.chatForm.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      if (!currentUser) {
+        setChatNotice(t("needCredentials"));
+        return;
+      }
+
+      if (!selectedFriend) {
+        setChatNotice(t("selectFriendToChat"));
+        setFriendMsg(t("selectFriendToChat"));
+        return;
+      }
+
+      if (els.chatInput.disabled || els.sendBtn.disabled) {
+        setChatNotice(t("selectFriendToChat"));
+        return;
+      }
+
+      if (voiceReadyBlob || voiceReadyMediaData) {
+        const blob = voiceReadyBlob;
+        const mediaDataFromNative = voiceReadyMediaData;
+        const content = voiceReadyContent;
+        voiceReadyBlob = null;
+        voiceReadyMediaData = "";
+        voiceReadyContent = "";
+        updateVoiceRecordButton();
+        renderChatStatus(selectedFriend);
+        try {
+          const mediaData = mediaDataFromNative || await readFileAsDataURL(blob);
+          await sendRichMessage({ content, messageType: "audio", mediaData });
+        } catch (error) {
+          setFriendMsg(t("voiceReadFailed", { message: error.message || t("unknownError") }));
+        }
+        return;
+      }
+
+      const text = els.chatInput.value.trim();
+      if (!text) return;
+      closeEmojiPicker();
+      els.chatInput.value = "";
+      await sendRichMessage({ content: text, messageType: "text" });
+    });
+
+    els.chatList.addEventListener("click", async (e) => {
+      const image = e.target.closest("img.bubble-image");
+      if (image) {
+        openImageViewer(image.currentSrc || image.src || "");
+        return;
+      }
+
+      const btn = e.target.closest("button[data-action='delete-message'][data-message-id]");
+      if (!btn || !currentUser || !selectedFriend) return;
+
+      const messageId = Number(btn.dataset.messageId);
+      if (!messageId) return;
+
+      try {
+        await deleteOwnMessage(messageId);
+        const rows = await fetchMessages(selectedFriend.id);
+        updateConversationState(selectedFriend.id, rows);
+        renderMessages(rows);
+        refreshAll().catch(() => {});
+      } catch (error) {
+        setFriendMsg(t("processFailed", { message: error.message || t("unknownError") }));
+      }
+    });
+
+    els.imageViewerClose.addEventListener("click", () => {
+      closeImageViewer();
+    });
+
+    els.imageViewer.addEventListener("click", (e) => {
+      if (e.target === els.imageViewer) {
+        closeImageViewer();
+      }
+    });
+
+    els.accountAvatarPreview.addEventListener("click", () => {
+      const src = resolveAvatarSrc(currentUser);
+      if (!src) return;
+      openImageViewer(src);
+    });
+
+    els.sendBtn.addEventListener("click", (e) => {
+      if (!currentUser) {
+        e.preventDefault();
+        setChatNotice(t("needCredentials"));
+        return;
+      }
+      if (!selectedFriend) {
+        e.preventDefault();
+        setChatNotice(t("selectFriendToChat"));
+        return;
+      }
+      if (els.chatForm && typeof els.chatForm.requestSubmit === "function") {
+        e.preventDefault();
+        els.chatForm.requestSubmit();
+      }
+    });
+
+    function openImagePicker(withCamera = false) {
+      if (!canComposeMessage()) {
+        setChatNotice(t("selectFriendToChat"));
+        return;
+      }
+
+      if (withCamera) {
+        els.imageInput.setAttribute("capture", "environment");
+      } else {
+        els.imageInput.removeAttribute("capture");
+      }
+      els.imageInput.value = "";
+      els.imageInput.click();
+    }
+
+    function resolveCameraErrorMessage(error) {
+      const rawName = String(error?.name || "").toLowerCase();
+      const rawCode = String(error?.code || "").toLowerCase();
+      const rawMsg = String(error?.message || "").toLowerCase();
+
+      if (rawCode.includes("not_supported") || rawName.includes("notsupported") || rawName.includes("notfound")) {
+        return t("cameraNotSupported");
+      }
+      if (rawCode.includes("insecure") || rawMsg.includes("secure")) {
+        return t("cameraInsecure");
+      }
+      if (
+        rawName.includes("notallowed")
+        || rawName.includes("securityerror")
+        || rawMsg.includes("permission")
+        || rawMsg.includes("denied")
+      ) {
+        return t("cameraPermissionDenied");
+      }
+      return t("cameraOpenFailed", { message: error?.message || t("unknownError") });
+    }
+
+    els.pickImageBtn.addEventListener("click", () => openImagePicker(false));
+    els.takePhotoBtn.addEventListener("click", async () => {
+      if (!canComposeMessage()) {
+        setChatNotice(t("selectFriendToChat"));
+        return;
+      }
+
+      const originalLabel = els.takePhotoBtn.textContent;
+      els.takePhotoBtn.disabled = true;
+      els.takePhotoBtn.textContent = "⏳";
+
+      try {
+        await openCameraOverlay("chat");
+      } catch (error) {
+        const message = resolveCameraErrorMessage(error);
+        setChatNotice(message);
+        setFriendMsg(message);
+      } finally {
+        els.takePhotoBtn.disabled = false;
+        els.takePhotoBtn.textContent = originalLabel || t("takePhoto");
+      }
+    });
+
+    els.cameraFlipBtn.addEventListener("click", async () => {
+      if (els.cameraFlipBtn.disabled) return;
+      els.cameraFlipBtn.disabled = true;
+      try {
+        if (cameraDeviceIds.length > 1) {
+          cameraDeviceIndex = (cameraDeviceIndex + 1) % cameraDeviceIds.length;
+          await startCameraStream(cameraFacingMode, cameraDeviceIds[cameraDeviceIndex]);
+        } else {
+          cameraFacingMode = cameraFacingMode === "environment" ? "user" : "environment";
+          await startCameraStream(cameraFacingMode);
+        }
+      } catch {
+        await startCameraStream("environment").catch(() => {});
+      } finally {
+        els.cameraFlipBtn.disabled = false;
+      }
+    });
+
+    els.cameraCancelBtn.addEventListener("click", () => {
+      closeCameraOverlay();
+    });
+
+    els.cameraOverlay.addEventListener("click", (e) => {
+      if (e.target === els.cameraOverlay) {
+        closeCameraOverlay();
+      }
+    });
+
+    els.cameraCaptureBtn.addEventListener("click", async () => {
+      if (els.cameraCaptureBtn.disabled) return;
+      const originalLabel = els.cameraCaptureBtn.textContent;
+      els.cameraCaptureBtn.disabled = true;
+      els.cameraCaptureBtn.textContent = "⏳";
+      try {
+        await captureAndSendFromCamera();
+      } catch (error) {
+        const message = t("cameraOpenFailed", { message: error?.message || t("unknownError") });
+        setChatNotice(message);
+        setFriendMsg(message);
+      } finally {
+        els.cameraCaptureBtn.disabled = false;
+        els.cameraCaptureBtn.textContent = originalLabel || t("cameraCapture");
+      }
+    });
+
+    els.voiceRecordBtn.addEventListener("click", async () => {
+      if (nativeVoiceRecording || (voiceMediaRecorder && voiceMediaRecorder.state === "recording")) {
+        await stopVoiceRecording();
+      } else if (voiceReadyBlob || voiceReadyMediaData) {
+        voiceReadyBlob = null;
+        voiceReadyMediaData = "";
+        voiceReadyContent = "";
+        updateVoiceRecordButton();
+        renderChatStatus(selectedFriend);
+      } else {
+        await startVoiceRecording();
+      }
+    });
+
+    els.imageInput.addEventListener("change", async () => {
+      const file = els.imageInput.files && els.imageInput.files[0];
+      if (!file) return;
+
+      const maxBytes = MAX_IMAGE_FILE_MB * 1024 * 1024;
+      if (file.size > maxBytes) {
+        const msg = t("imageTooLarge", { size: MAX_IMAGE_FILE_MB });
+        setChatNotice(msg);
+        setFriendMsg(msg);
+        alert("暂不支持超过3MB的文件");
+        els.imageInput.value = "";
+        return;
+      }
+
+      try {
+        const mediaData = await readFileAsDataURL(file);
+        await sendRichMessage({
+          content: "",
+          messageType: "image",
+          mediaData,
+        });
+      } catch (error) {
+        setChatNotice(t("readingImageFailed", { message: error.message || t("unknownError") }));
+        setFriendMsg(t("readingImageFailed", { message: error.message || t("unknownError") }));
+      } finally {
+        els.imageInput.value = "";
+      }
+    });
+
+    els.sendDocBtn.addEventListener("click", () => {
+      if (!canComposeMessage()) {
+        setChatNotice(t("selectFriendToChat"));
+        return;
+      }
+      els.docInput.value = "";
+      els.docInput.click();
+    });
+
+    els.docInput.addEventListener("change", async () => {
+      const file = els.docInput.files && els.docInput.files[0];
+      if (!file) return;
+
+      const maxBytes = MAX_DOC_FILE_MB * 1024 * 1024;
+      if (file.size > maxBytes) {
+        setChatNotice(t("documentTooLarge", { size: MAX_DOC_FILE_MB }));
+        setFriendMsg(t("documentTooLarge", { size: MAX_DOC_FILE_MB }));
+        els.docInput.value = "";
+        return;
+      }
+
+      try {
+        const mediaData = await readFileAsDataURL(file);
+        await sendRichMessage({
+          content: file.name,
+          messageType: "file",
+          mediaData,
+        });
+      } catch (error) {
+        setChatNotice(t("readingDocumentFailed", { message: error.message || t("unknownError") }));
+        setFriendMsg(t("readingDocumentFailed", { message: error.message || t("unknownError") }));
+      } finally {
+        els.docInput.value = "";
+      }
+    });
+
+    els.sendLocationBtn.addEventListener("click", async () => {
+      if (!canComposeMessage()) {
+        setChatNotice(t("selectFriendToChat"));
+        return;
+      }
+
+      const origLabel = els.sendLocationBtn.textContent;
+      els.sendLocationBtn.disabled = true;
+      els.sendLocationBtn.textContent = "⏳";
+
+      let latitude = null;
+      let longitude = null;
+      try {
+        const resolved = await resolveLocationForMessage();
+        latitude = resolved.latitude;
+        longitude = resolved.longitude;
+
+        await sendRichMessage({
+          content: t("locationMessage"),
+          messageType: "location",
+          latitude,
+          longitude,
+        });
+      } catch (error) {
+        let msg;
+        const code = error?.code;
+        const detail = error?.message || t("unknownError");
+        if (code === 1) {
+          msg = t("locationPermissionDenied");
+        } else if (String(error?.message || "") === "geolocation_insecure_context") {
+          msg = t("locationInsecure");
+        } else if (code === 2) {
+          msg = t("locationUnavailable");
+        } else if (code === 3) {
+          msg = t("locationTimeout");
+        } else if (String(error?.message || "").toLowerCase().includes("send message failed")) {
+          msg = t("messageSendFailed", { message: error?.message || t("unknownError") });
+        } else {
+          msg = t("locationDenied", { message: detail });
+        }
+        setChatNotice(`${msg}${code ? ` (code: ${code})` : ""}`);
+        setFriendMsg(msg);
+      } finally {
+        els.sendLocationBtn.disabled = false;
+        els.sendLocationBtn.textContent = origLabel;
+      }
+    });
+
+    els.chatInput.addEventListener("keydown", (e) => {
+      if (e.key === "Enter" && !e.shiftKey) {
+        e.preventDefault();
+        els.chatForm.requestSubmit();
+        return;
+      }
+
+      if (e.key === "Escape") {
+        stopTypingIndicatorNow();
+      }
+    });
+
+    els.chatInput.addEventListener("input", () => {
+      if (!currentUser || !selectedFriend) return;
+      if (!els.chatInput.value.trim()) {
+        stopTypingIndicatorNow();
+        return;
+      }
+
+      scheduleTypingUpdate(selectedFriend.id);
+    });
+
+    els.chatInput.addEventListener("blur", () => {
+      stopTypingIndicatorNow();
+    });
+
+    els.emojiToggleBtn.addEventListener("click", (e) => {
+      e.preventDefault();
+      if (!canComposeMessage()) {
+        setChatNotice(t("selectFriendToChat"));
+        return;
+      }
+      setEmojiPickerOpen(!emojiPickerOpen);
+      if (emojiPickerOpen) {
+        els.chatInput.focus();
+      }
+    });
+
+    els.emojiGrid.addEventListener("click", (e) => {
+      const button = e.target.closest("button[data-emoji]");
+      if (!button) return;
+      insertEmojiIntoChat(button.dataset.emoji || "");
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!emojiPickerOpen) return;
+      const target = e.target;
+      if (els.emojiPicker.contains(target) || els.emojiToggleBtn.contains(target)) return;
+      closeEmojiPicker();
+    });
+
+    els.refreshBtn.addEventListener("click", async () => {
+      if (refreshBtnLoading) return;
+
+      refreshBtnLoading = true;
+      renderRefreshButton();
+      const startedAt = Date.now();
+
+      try {
+        await refreshAll();
+        showRefreshCompleteToast();
+      } catch (error) {
+        setFriendMsg(t("refreshFailed", { message: error.message || t("unknownError") }));
+      } finally {
+        const elapsed = Date.now() - startedAt;
+        const waitMs = Math.max(0, 450 - elapsed);
+        setTimeout(() => {
+          refreshBtnLoading = false;
+          renderRefreshButton();
+        }, waitMs);
+      }
+    });
+
+    const tryUnlockSound = () => {
+      if (notificationAudioUnlocked) return;
+      unlockNotificationSound().catch(() => {});
+    };
+    document.addEventListener("pointerdown", tryUnlockSound, { passive: true });
+    document.addEventListener("touchstart", tryUnlockSound, { passive: true });
+    document.addEventListener("keydown", tryUnlockSound);
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape" && els.imageViewer.classList.contains("show")) {
+        closeImageViewer();
+      }
+    });
+
+    window.addEventListener("focus", triggerForegroundRefresh);
+    document.addEventListener("visibilitychange", () => {
+      if (document.visibilityState === "visible") {
+        if (currentUser) {
+          startPolling();
+        }
+        triggerForegroundRefresh();
+      } else if (currentUser) {
+        cancelVoiceRecording();
+        clearTypingTimers();
+        if (!isAndroidAppRuntime()) {
+          stopPolling();
+        }
+      }
+    });
+
+    window.addEventListener("pagehide", () => {
+      if (currentUser) {
+        cancelVoiceRecording();
+        clearTypingTimers();
+      }
+    });
+
+    window.addEventListener("offline", () => {
+      showNetworkErrorModal();
+    });
+
+    window.addEventListener("online", () => {
+      hideNetworkErrorModal();
+      if (currentUser) {
+        refreshAll().catch(() => {});
+      }
+    });
+
+    document.getElementById("netErrorRetryBtn").addEventListener("click", async () => {
+      const connected = await ensureInternetConnection({ showModal: true });
+      if (!connected) return;
+      if (currentUser) {
+        refreshAll().catch(() => {});
+      }
+    });
+
+    (async function bootstrap() {
+      renderEmojiPicker();
+      applyLanguage();
+      setAuthMode("login");
+      const instantRestored = restoreUserCacheInstant();
+      if (!instantRestored) {
+        updateView();
+      }
+      if (!navigator.onLine) {
+        showNetworkErrorModal();
+      }
+
+      try {
+        await initDatabase();
+        const restoredBySession = await restoreLoginSession().catch(() => false);
+        const restoredByCache = restoredBySession ? true : await restoreCachedLogin().catch(() => false);
+        const restoredByUserCache = (restoredBySession || restoredByCache)
+          ? instantRestored
+          : await restoreUserCacheLogin().catch(() => false);
+        if (!restoredBySession && !restoredByCache && !restoredByUserCache) {
+          setAuthMsg(t("promptRegisterLogin"), true);
+          if (await ensureInternetConnection()) {
+            showRefreshCompleteToast();
+          }
+        } else if (currentUser) {
+          await waitForRefreshIdle();
+          requestNotificationPermission().catch(() => {});
+          startPolling();
+          try {
+            await refreshAll();
+          } catch (error) {
+            if (isNetworkError(error)) {
+              showNetworkErrorModal();
+            } else {
+              setFriendMsg(t("refreshFailed", { message: error.message || t("unknownError") }));
+            }
+          }
+          updatePresence().catch(() => {});
+          showRefreshCompleteToast();
+        }
+      } catch (error) {
+        if (isNetworkError(error)) {
+          showNetworkErrorModal();
+        } else {
+          setAuthMsg(t("dbInitFailed", { message: error.message || t("unknownError") }));
+        }
+      } finally {
+        bootstrapInProgress = false;
+      }
+    })();
+  </script>
+</body>
+</html>
+
